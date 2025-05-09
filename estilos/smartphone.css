@@ -26,10 +26,11 @@ header {
 }
 
 header a {
+    font-size: 1.2rem;
+    font-weight:bold;
+    color: #F20505;
     padding: 0.5rem;
     text-decoration: none;
-    color: #F20505;
-    font-weight:bold;
     text-shadow: 1.5px 1.5px 1px #F2BB13;
 }
 
@@ -41,7 +42,7 @@ header a:hover {
 }
 
 header img {
-    height: 10vh;
+    height: 15vh;
     padding: 0.5rem;
-    
+    margin-left: 2rem;
 }
