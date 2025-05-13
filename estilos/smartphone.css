@@ -13,6 +13,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 html, body {
@@ -22,6 +23,7 @@ html, body {
 header {
     display: flex;
     align-items: center;
+    width: 100vw;
     background-color: #24426A;
 }
 
