@@ -18,12 +18,14 @@
 
 html, body {
     font-family: var(--fonte1);
+ 
+    height: 200vh;
 }
 
 header {
     display: flex;
     align-items: center;
-    width: 100vw;
+    width: 99vw;
     background-color: #24426A;
     justify-content: space-between;
 }
@@ -31,17 +33,18 @@ header {
 header a {
     font-size: 1.2rem;
     font-weight:bold;
-    color: #F20505;
+    color: #F2BB13;
     padding: 0.5rem;
     text-decoration: none;
-    text-shadow: 1.5px 1.5px 1px #F2BB13;
+    text-shadow: 1.5px 1.5px 1px ;
 }
 
 header a:hover {
     
-    color: #F2BB13;
+    color: white;
     transition-duration: 0.5s;
-    text-shadow: 1.5px 1.5px 1px #F20505;
+    text-shadow: 1.5px 1.5px 1px ;
+    background-color: rgba(0, 0, 0, 0.274);
 }
 
 header span {
