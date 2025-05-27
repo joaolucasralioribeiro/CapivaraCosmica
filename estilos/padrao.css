@@ -2,9 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
 
-@media screen {
-    
-}
 
 :root {
     --fonte1: "Exo 2", sans-serif;
@@ -112,9 +109,4 @@ menu > ul > li > a {
     padding-block: 2rem;
 
     z-index: 6;
-}
-
-main {
-    height: calc(100vh - 110px);
-    background: center / cover no-repeat black;
 }

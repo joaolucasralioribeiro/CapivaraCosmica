@@ -1,0 +1,5 @@
+
+main {
+    height: calc(100vh - 110px);
+    background: center / cover no-repeat black;
+}
