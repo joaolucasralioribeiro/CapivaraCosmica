@@ -2,7 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
 
-
 :root {
     --fonte1: "Exo 2", sans-serif;
 }
@@ -13,7 +12,8 @@
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     font-family: var(--fonte1);
 }
 
@@ -27,18 +27,18 @@ header {
 
 header a {
     font-size: 1.2rem;
-    font-weight:bold;
+    font-weight: bold;
     color: #F2BB13;
     padding: 0.5rem;
     text-decoration: none;
-    text-shadow: 1.5px 1.5px 1px ;
+    text-shadow: 1.5px 1.5px 1px;
 }
 
 header a:hover {
-    
+
     color: white;
     transition-duration: 0.5s;
-    text-shadow: 1.5px 1.5px 1px ;
+    text-shadow: 1.5px 1.5px 1px;
     background-color: rgba(0, 0, 0, 0.274);
 }
 
@@ -72,7 +72,7 @@ menu {
     display: none;
 }
 
-menu > ul {
+menu>ul {
     position: fixed;
     top: 0;
     left: 0;
@@ -93,15 +93,14 @@ menu > ul {
     list-style-type: none;
 }
 
-
-
-.nav-list, .nav-active {
+.nav-list,
+.nav-active {
     clip-path: circle(1500px at 10% 10%);
     pointer-events: all;
     padding: 0;
 }
 
-menu > ul > li > a {
+menu>ul>li>a {
     display: block;
     justify-content: space-between;
     padding-block: 2rem;
@@ -126,6 +125,10 @@ aside#cards-prod {
     width: 96vw;
 }
 
+aside#cards-prod h1 {
+    padding: 10px;
+}
+
 div.prod {
     display: flex;
     flex-direction: column;
@@ -133,15 +136,18 @@ div.prod {
     border-radius: 1em;
     overflow: hidden;
     text-align: center;
-    
+
     margin: 10px;
     width: 100%;
-    background-color: lightgray;
+    color: white;
+    background-color: #24426A;
     box-shadow: 1px 1px 5px black;
 }
 
 div.prod p {
     font-weight: bold;
+    margin: 0;
+    padding: 10px;
 }
 
 img.imgprod {
@@ -150,6 +156,22 @@ img.imgprod {
     object-fit: cover;
 
     margin: auto;
+}
+
+.contatosFixed {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    position: fixed;
+    bottom: 5%;
+
+}
+
+.logoContatoFixed {
+    width: 70px;
+    height: auto;
+    padding: 10px;
+    padding-block: 20px;
 }
 
 @media screen and (min-width: 768px) {
@@ -171,7 +193,7 @@ img.imgprod {
         display: block !important;
     }
 
-    menu > ul {
+    menu>ul {
         position: relative;
         display: flex;
         list-style-type: none;
@@ -192,12 +214,22 @@ img.imgprod {
         display: flex;
         flex-direction: row;
         justify-content: center;
+        flex-wrap: wrap;
     }
 
     div.prod {
         display: flex;
         flex-direction: column;
         width: 30%;
+    }
+
+    div.prod p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: min-content;
+        white-space: nowrap;
+
+        padding-left: 10px;
     }
 
     img.imgprod {
