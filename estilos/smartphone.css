@@ -2,9 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
 
-@media screen {
-    
-}
 
 :root {
     --fonte1: "Exo 2", sans-serif;
@@ -18,14 +15,12 @@
 
 html, body {
     font-family: var(--fonte1);
- 
-    height: 200vh;
 }
 
 header {
     display: flex;
     align-items: center;
-    width: 99vw;
+
     background-color: #24426A;
     justify-content: space-between;
 }
@@ -114,7 +109,94 @@ menu > ul > li > a {
     z-index: 6;
 }
 
+.d-none {
+    display: none !important;
+}
+
 main {
     height: calc(100vh - 110px);
-    background: center / cover no-repeat black;
+    background: center / cover no-repeat white;
+}
+
+aside#cards-prod {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    width: 96vw;
+}
+
+div.prod {
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 1em;
+    overflow: hidden;
+    text-align: center;
+    
+    margin: 10px;
+    width: 100%;
+    background-color: aquamarine;
+}
+
+img.imgprod {
+    width: 400px;
+    height: 600px;
+    object-fit: cover;
+
+    margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+
+    header {
+        display: flex;
+        padding: 0px 1.5em;
+    }
+
+    span#menu {
+        display: none;
+    }
+
+    img#logo {
+        margin: 0px;
+    }
+
+    menu#itens {
+        display: block !important;
+    }
+
+    menu > ul {
+        position: relative;
+        display: flex;
+        list-style-type: none;
+        justify-content: space-between;
+        padding: 0;
+        width: auto;
+        height: auto;
+
+        flex-direction: row;
+
+        padding: 0px;
+        margin: 0px;
+        margin-right: .5rem;
+        gap: 2em;
+    }
+
+    div#mais-pedidos {
+        display: flex;
+        flex-direction: row;
+    }
+
+    div.prod {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+    }
+
+    img.imgprod {
+        width: 100px;
+        height: 100px;
+        margin: auto;
+    }
 }
