@@ -65,8 +65,9 @@
 }
                                   
 
+/*códigos relacionados ao arquivo produtos.css
+Estilos base (mobile first) - até 304px */
 
-/* Estilos base (mobile first) - até 304px */
 .menu-produtos {
   display: flex;
   flex-direction: row;
