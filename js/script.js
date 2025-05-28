@@ -17,3 +17,19 @@
         const menu = document.querySelector(".menu");
         const header = document.querySelector(".nav");
         menu.addEventListener("click", () => header.classList.toggle("active"));
+
+//Função do dropdown na página de produtos
+
+function mostrarMenu() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
