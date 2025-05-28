@@ -79,7 +79,6 @@
   gap: 10px;
 }
 
-/* Dispositivos muito pequenos (305px-500px) - layout em coluna */
 @media (min-width: 305px) and (max-width: 500px) {
   .menu-produtos {
     flex-direction: column;
@@ -92,7 +91,7 @@
   }
 }
 
-/* Tablets pequenos e smartphones grandes (501px-767px) */
+
 @media (min-width: 501px) and (max-width: 767.98px) {
   .menu-produtos {
     justify-content: center;
@@ -101,7 +100,7 @@
   }
 }
 
-/* Tablets (768px-991px) */
+
 @media (min-width: 768px) and (max-width: 991.98px) {
   .menu-produtos {
     justify-content: space-evenly;
@@ -110,7 +109,7 @@
   }
 }
 
-/* Desktops pequenos e laptops (992px-1199px) */
+
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .menu-produtos {
     height: 18vh;
@@ -121,7 +120,7 @@
   }
 }
 
-/* Desktops grandes (1200px+) */
+
 @media (min-width: 1200px) {
   .menu-produtos {
     height: 20vh;
