@@ -61,4 +61,72 @@
         height: 300px;
         margin: 0;
     }
+
+}
+                                  
+
+
+/* Estilos base (mobile first) - até 304px */
+.menu-produtos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  width: 100%;
+  height: auto;
+  gap: 10px;
+}
+
+/* Dispositivos muito pequenos (305px-500px) - layout em coluna */
+@media (min-width: 305px) and (max-width: 500px) {
+  .menu-produtos {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: auto;
+    width: 100%;
+    padding: 15px;
+    gap: 12px;
+  }
+}
+
+/* Tablets pequenos e smartphones grandes (501px-767px) */
+@media (min-width: 501px) and (max-width: 767.98px) {
+  .menu-produtos {
+    justify-content: center;
+    padding: 18px;
+    gap: 15px;
+  }
+}
+
+/* Tablets (768px-991px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .menu-produtos {
+    justify-content: space-evenly;
+    padding: 20px;
+    gap: 18px;
+  }
+}
+
+/* Desktops pequenos e laptops (992px-1199px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .menu-produtos {
+    height: 18vh;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 25px;
+  }
+}
+
+/* Desktops grandes (1200px+) */
+@media (min-width: 1200px) {
+  .menu-produtos {
+    height: 20vh;
+    margin-top: 5%;
+    justify-content: center;
+    gap: 10%;
+  }
 }
