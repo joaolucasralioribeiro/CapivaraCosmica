@@ -3,6 +3,10 @@ main{
    
 }
 
+.categoria{
+    display: none;
+}
+
 
 .dropdown{
     margin-top: 15%;
@@ -23,36 +27,16 @@ main{
     margin-top: 0;
     width: 20%;
     height: 100vh;
-    background-color: burlywood;
+    background-color: rgb(230, 228, 225);
     min-width: 175.59px;
-    height: 100vh;
-    width: 20%;
    
 }
 
 .leftcol h2 {
-    transition: all 0.3s ease;
-    display: inline-block;
-    position: relative;
     margin-top: 10%;
     cursor: pointer;
 }
 
-.leftcol h2:hover {
-    color: #24426A;
-    transform: scale(1.03);
-    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.leftcol h2:hover::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -4px;
-    width: 100%;
-    height: 2px;
-    background-color: #24426A;
-}
 
 
 
@@ -74,4 +58,34 @@ ul li{
     margin-top: 3%;
     flex-grow: 1;
    
+}
+
+h3{
+    text-align: center;
+    margin-bottom: 3%;
+}
+.conteudo{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    background-color: antiquewhite;
+    border-radius: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
+  
+}
+.conteudo img {
+    width: 200px;
+    height: 200px;
+    border: 4px solid black;
+    border-radius: 15%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-right: 2%;
+    margin-top: 2%;
+    transition: transform 0.3s ease;
+}
+
+.conteudo img:hover {
+    transform: scale(1.1); 
 }
