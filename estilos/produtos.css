@@ -1,3 +1,9 @@
+main{
+    display: flex;
+   
+}
+
+
 .dropdown{
     margin-top: 15%;
 }
@@ -16,13 +22,39 @@
     font-family: var(--fonte1);
     margin-top: 0;
     width: 20%;
-    height: 100%;
+    height: 100vh;
     background-color: burlywood;
     min-width: 175.59px;
     height: 100vh;
     width: 20%;
    
 }
+
+.leftcol h2 {
+    transition: all 0.3s ease;
+    display: inline-block;
+    position: relative;
+    margin-top: 10%;
+    cursor: pointer;
+}
+
+.leftcol h2:hover {
+    color: #24426A;
+    transform: scale(1.03);
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.leftcol h2:hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 2px;
+    background-color: #24426A;
+}
+
+
 
 ul li{
     list-style-type: none;
@@ -36,3 +68,10 @@ ul li{
     font-size: 1rem;
 }
 
+#conteudo-categorias{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    flex-grow: 1;
+   
+}

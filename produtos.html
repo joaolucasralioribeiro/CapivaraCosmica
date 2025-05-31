@@ -27,48 +27,63 @@
     </header>
 
     <main>
+    
         <div class="leftcol">
-         <h2>Categorias</h2>
-         <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Funk Pop
-        </button>
-        <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-        </ul>
+            <h2>Categorias</h2>
+
+            <div class="dropdown mb-3">
+                <button class="btn btn-secondary dropdown-toggle w-100" type="button" data-bs-toggle="dropdown">
+                    Action Figure
+                </button>
+                <ul class="dropdown-menu w-100">
+                    <li><a class="dropdown-item" href="#" onclick="mostrarCategoria('articulados')">Articulados</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="mostrarCategoria('estaticos')">Estáticos</a></li>
+                </ul>
+            </div>
+            <div class="dropdown mb-3">
+                <button class="btn btn-secondary dropdown-toggle w-100" type="button" data-bs-toggle="dropdown">
+                    Presenteáveis 
+                </button>
+                <ul class="dropdown-menu w-100">
+                    <li><a class="dropdown-item" href="#" onclick="mostrarCategoria('articulados')">Articulados</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="mostrarCategoria('estaticos')">Estáticos</a></li>
+                </ul>
+            </div>
+            <div class="dropdown mb-3">
+                <button class="btn btn-secondary dropdown-toggle w-100" type="button" data-bs-toggle="dropdown">
+                    Colecionáveis
+                </button>
+                <ul class="dropdown-menu w-100">
+                    <li><a class="dropdown-item" href="#" onclick="mostrarCategoria('articulados')">Articulados</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="mostrarCategoria('estaticos')">Estáticos</a></li>
+                </ul>
+            </div>
+            <div class="dropdown mb-3">
+                <button class="btn btn-secondary dropdown-toggle w-100" type="button" data-bs-toggle="dropdown">
+                   Toy Art
+                </button>
+                <ul class="dropdown-menu w-100">
+                    <li><a class="dropdown-item" href="#" onclick="mostrarCategoria('articulados')">Articulados</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="mostrarCategoria('estaticos')">Estáticos</a></li>
+                </ul>
+            </div>
+        
         </div>
-        <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Presenteáveis
-        </button>
-        <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-        </ul>
+
+        <!--Conteudo oculto dos produtos-->
+        <div id="conteudo-categorias">
+            <div id="div-articulados" class="categoria" style="display: none;">
+                <h3>Action Figures Articulados</h3>
+                
+            </div>
+
+            <div id="div-estaticos" class="categoria" style="display: none;">
+                <h3>Action Figures Estáticos</h3>
+                <p>Conteúdo de estáticos aqui.</p>
+            </div>
         </div>
-        <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Action Figure
-        </button>
-        <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-        </ul>
-        </div>
-        <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Mini Colecionáveis
-        </button>
-        <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-        </ul>
-        </div>
+
+
 
 
 
