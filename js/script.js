@@ -37,14 +37,28 @@ window.onclick = function(e) {
 
 //Função utilizado para mostrar os produtos 
 
-function mostrarCategoria(categoria) {
-       
-        const categorias = document.querySelectorAll('.categoria');
-        categorias.forEach(div => div.style.display = 'none');
+function mostrarCategoria(categoriaId) {
+   
+    const categorias = document.querySelectorAll('.categoria');
+    categorias.forEach(div => div.style.display = 'none');
 
-        
-        const divSelecionada = document.getElementById(`div-${categoria}`);
-        if (divSelecionada) {
-            divSelecionada.style.display = 'block';
-        }
+   
+    const divCategoria = document.getElementById(`div-${categoriaId}`);
+    if (divCategoria) {
+        divCategoria.style.display = 'block';
     }
+
+    
+    document.getElementById('titulo-inicial').style.display = 'none';
+
+
+    document.getElementById('btn-voltar').style.display = 'block';
+}
+
+  function voltarAoInicio() {
+    const categorias = document.querySelectorAll('.categoria');
+    categorias.forEach(div => div.style.display = 'none');
+
+    document.getElementById('titulo-inicial').style.display = 'block';
+    document.getElementById('btn-voltar').style.display = 'none';
+}

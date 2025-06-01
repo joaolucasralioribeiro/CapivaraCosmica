@@ -1,7 +1,17 @@
-main{
+
+main {
+    height: 100%;
     display: flex;
-   
 }
+
+#logo {
+    transition: transform 0.3s ease;
+}
+
+#logo:hover {
+    transform: scale(1.1);
+}
+
 
 .categoria{
     display: none;
@@ -9,7 +19,7 @@ main{
 
 
 .dropdown{
-    margin-top: 15%;
+    margin-top: 10%;
 }
 
 
@@ -25,10 +35,14 @@ main{
     align-items: center;
     font-family: var(--fonte1);
     margin-top: 0;
-    width: 20%;
-    height: 100vh;
+    width: 25%;
     background-color: rgb(230, 228, 225);
     min-width: 175.59px;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    overflow-y: auto;
+    
    
 }
 
@@ -70,9 +84,10 @@ h3{
     flex-wrap: wrap;
     align-content: center;
     background-color: antiquewhite;
-    border-radius: 5%;
+    border-radius: 30px;
     margin-left: 3%;
     margin-right: 3%;
+    
   
 }
 .conteudo img {
@@ -84,8 +99,14 @@ h3{
     margin-right: 2%;
     margin-top: 2%;
     transition: transform 0.3s ease;
+    margin-bottom: 2%;
 }
 
 .conteudo img:hover {
-    transform: scale(1.1); 
+    transform: scale(1.05); 
+}
+
+#btn-voltar {
+    display: none;
+    margin-top: 50%;
 }
