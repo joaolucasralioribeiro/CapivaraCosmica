@@ -80,3 +80,24 @@ img.imgprod {
     padding-block: 20px;
 }
     /* Configs do Footer */ 
+
+#rodape {
+    display: flex;
+    flex-direction: column;
+
+    background-color: #24426A;
+    padding: 2em;
+    padding-left: 4em;
+}
+
+#social {
+    color: white;
+}
+
+#insta {
+    width: 70px;
+}
+
+#contato {
+    color: white;
+}

@@ -11,10 +11,12 @@
             if (itens.style.display == 'block') {
                 itens.style.display = 'none'
                 menu.style.position = 'relative'
+                menu.style.left = '0%'
 
             } else {
                 itens.style.display = 'block'
                 menu.style.position = 'fixed'
+                menu.style.left = '90%'
             }
         }
 
