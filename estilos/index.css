@@ -1,6 +1,6 @@
 
 main {
-    height: calc(100vh - 110px);
+    /* height: calc(100vh - 110px); */
     background: center / cover no-repeat white;
 }
     /* Config para ajustar o carrossel em telas maiores */
@@ -62,42 +62,4 @@ img.imgprod {
     object-fit: cover;
 
     margin: auto;
-}
-    /* Configs da img do whats no canto da tela */
-.contatosFixed {
-    display: flex;
-    flex-direction: column;
-    width: fit-content;
-    position: fixed;
-    bottom: 5%;
-
-}
-
-.logoContatoFixed {
-    width: 70px;
-    height: auto;
-    padding: 10px;
-    padding-block: 20px;
-}
-    /* Configs do Footer */ 
-
-#rodape {
-    display: flex;
-    flex-direction: column;
-
-    background-color: #24426A;
-    padding: 2em;
-    padding-left: 4em;
-}
-
-#social {
-    color: white;
-}
-
-#insta {
-    width: 70px;
-}
-
-#contato {
-    color: white;
 }
