@@ -6,25 +6,17 @@
             }
         }
         function clickMenu() {
-        const menu = document.getElementById("menu");
-
             if (itens.style.display == 'block') {
                 itens.style.display = 'none'
-                menu.style.position = 'relative'
-                menu.style.left = '0%'
-
             } else {
                 itens.style.display = 'block'
-                menu.style.position = 'fixed'
-                menu.style.left = '90%'
             }
         }
 
   
-          const menu = document.querySelector("#menu");
-          const header = document.querySelector("#nav");
-          menu.addEventListener("click", () => header.classList.toggle("active"));
-        
+        const menu = document.querySelector(".menu");
+        const header = document.querySelector(".nav");
+        menu.addEventListener("click", () => header.classList.toggle("active"));
 
 //Função do dropdown na página de produtos
 
