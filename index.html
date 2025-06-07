@@ -16,8 +16,8 @@
 </head>
 <body>
     <header onresize="mudouTamanho()" id="nav">
-        <span id="menu" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
         <img id="logo" src="imagens/Logo oficial horizontal.png" alt="Logo">
+        <span id="menu" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
         <menu id="itens">
             <ul class="nav-list">
                 <li><a href="produtos.html">Produtos</a></li>
@@ -99,10 +99,27 @@
         </aside>
     </main>
     <footer>
-        <div class="contatosFixed">
+        <div class="WhatsLogoFixed">
             <a href="https://bit.ly/oicleo" target="_blank">
-                <img src="imagens/logoWhats.png" alt="Confira nossa página no WhatsApp" class="logoContatoFixed">
+                <img src="imgs/logoWhatsBlack.png" alt="Confira nossa página no WhatsApp" class="WhatsLogoImg"
+                    onmouseover="this.src='imgs/logoWhats.png'" onmouseout="this.src='imgs/logoWhatsBlack.png'">
             </a>
+        </div>
+        <div class="FooterBanner">
+            <img src="imgs/Logo oficial horizontal.png" alt="Nossa Logo" class="LogoHorizontalFooter">
+            <div class="ContatosLogoFooter">
+                <a href="https://www.instagram.com/capivaracosmica.loja/" target="_blank">
+                    <img src="imgs/logoInstaBlack.png" alt="Confira nossa página no Instagram!" class="InstaLogoImg"
+                        onmouseover="this.src='imgs/logoInsta.png'" onmouseout="this.src='imgs/logoInstaBlack.png'">
+                </a>
+                <a href="https://maps.app.goo.gl/hw2oW6hmVLTGgj3D6" target="_blank">
+                    <img src="imgs/logoMapsBlack.png" alt="Confira nossa Loja Física!" class="MapsLogoImg"
+                        onmouseover="this.src='imgs/logoMaps.png'" onmouseout="this.src='imgs/logoMapsBlack.png'">
+                </a>
+            </div>
+            <p class="footerText">Telefone:(17) 98191-9993</p>
+            <p class="footerText">Endereço: R. Cel. Spínola de Castro, 3635 - Loja 02 - Centro, São José do Rio Preto - SP, 15015-500</p>
+            <p>© Capivara Cósmica - TODOS OS DIREITOS RESERVADOS</p>
         </div>
     </footer>
     <script src="js/script.js"></script>

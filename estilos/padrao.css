@@ -117,36 +117,62 @@ menu>ul>li>a {
 }
 
     /* Configs da img do whats no canto da tela */
-.contatosFixed {
+
+.WhatsLogoFixed {
     display: flex;
-    flex-direction: column;
     width: fit-content;
     position: fixed;
-    bottom: 5%;
+    bottom: 8%;
 
 }
 
-.logoContatoFixed {
+.WhatsLogoImg {
     width: 70px;
-    height: auto;
-    padding: 10px;
-    padding-block: 20px;
+    min-width: 60px;
 }
+
+.WhatsLogoImg:hover {
+    cursor: pointer;
+    transform: scale(1.15);
+    transition: transform 0.5s ease;
+}
+
     /* Configs do Footer */ 
 
-#rodape {
+.FooterBanner {
+    background-color: #24426A;
     display: flex;
     flex-direction: column;
-
-    background-color: #24426A;
-    padding: 2em;
-    padding-left: 4em;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2%;
 }
 
-#contato {
-    color: white;
+.LogoHorizontalFooter {
+    width: 15%;
+    min-width: 160px;
 }
 
-.icones {
-    width: 70px;
+.InstaLogoImg,
+.MapsLogoImg {
+    width: 60px;
+}
+
+.InstaLogoImg:hover,
+.MapsLogoImg:hover {
+    cursor: pointer;
+    transform: scale(1.15);
+    transition: transform 0.5s ease;
+}
+
+.ContatosLogoFooter {
+    display: flex;
+    justify-content: center;
+    gap: 30%;
+}
+
+.FooterBanner p {
+    color: #000000;
+    font-size: 0.8rem;
+    margin: 0.5rem 0;
 }
