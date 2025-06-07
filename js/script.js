@@ -39,7 +39,7 @@ window.onclick = function(e) {
       myDropdown.classList.remove('show');
     }
   }
-});
+};
 
 // MOSTRAR PRODUTOS POR CATEGORIA
 function mostrarCategoria(categoriaId) {
@@ -66,10 +66,6 @@ function voltarAoInicio() {
 // ⬇️ ESSENCIAL: chama a função ao carregar e redimensionar
 window.addEventListener("resize", mudouTamanho);
 window.addEventListener("load", mudouTamanho);
-}
-
-
-
 
 
         function toggleMenu() {
