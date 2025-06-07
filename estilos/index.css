@@ -64,20 +64,3 @@ img.imgprod {
 
     margin: auto;
 }
-
-.contatosFixed {
-    display: flex;
-    flex-direction: column;
-    width: fit-content;
-    position: fixed;
-    bottom: 5%;
-
-}
-
-.logoContatoFixed {
-    width: 70px;
-    height: auto;
-    padding: 10px;
-    padding-block: 20px;
-}
-
