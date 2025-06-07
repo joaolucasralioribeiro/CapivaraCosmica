@@ -1,72 +1,61 @@
- function mudouTamanho() {
-            if (window.innerWidth >= 750) {
-                itens.style.display = 'block'
-            } else {
-                itens.style.display = 'none'
-            }
-        }
-        function clickMenu() {
-            if (itens.style.display == 'block') {
-                itens.style.display = 'none'
-            } else {
-                itens.style.display = 'block'
-            }
-        }
+function mudouTamanho() {
+    if (window.innerWidth >= 750) {
+        itens.style.display = 'block';
+    } else {
+        itens.style.display = 'none';
+    }
+}
 
-  
-        const menu = document.querySelector(".menu");
-        const header = document.querySelector(".nav");
-        menu.addEventListener("click", () => header.classList.toggle("active"));
+function clickMenu() {
+    if (itens.style.display === 'block') {
+        itens.style.display = 'none';
+    } else {
+        itens.style.display = 'block';
+    }
+}
 
-//Função do dropdown na página de produtos
+const menu = document.querySelector(".menu");
+const header = document.querySelector(".nav");
+if (menu && header) {
+    menu.addEventListener("click", () => {
+        header.classList.toggle("active");
+    });
+}
 
 function mostrarMenu() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-
-
-window.onclick = function(e) {
-  if (!e.target.matches('.dropbtn')) {
-  var myDropdown = document.getElementById("myDropdown");
-    if (myDropdown.classList.contains('show')) {
-      myDropdown.classList.remove('show');
+    const dropdown = document.getElementById("myDropdown");
+    if (dropdown) {
+        dropdown.classList.toggle("show");
     }
-  }
-<<<<<<< Updated upstream
-}
-=======
-<<<<<<< HEAD
-});
-=======
 }
 
-
-//Função utilizado para mostrar os produtos 
+// Fecha o menu dropdown se clicar fora
+window.onclick = function(e) {
+    if (!e.target.matches('.dropbtn')) {
+        const dropdown = document.getElementById("myDropdown");
+        if (dropdown && dropdown.classList.contains('show')) {
+            dropdown.classList.remove('show');
+        }
+    }
+}
 
 function mostrarCategoria(categoriaId) {
-   
     const categorias = document.querySelectorAll('.categoria');
     categorias.forEach(div => div.style.display = 'none');
 
-   
     const divCategoria = document.getElementById(`div-${categoriaId}`);
     if (divCategoria) {
         divCategoria.style.display = 'block';
     }
 
-    
     document.getElementById('titulo-inicial').style.display = 'none';
-
-
     document.getElementById('btn-voltar').style.display = 'block';
 }
 
-  function voltarAoInicio() {
+function voltarAoInicio() {
     const categorias = document.querySelectorAll('.categoria');
     categorias.forEach(div => div.style.display = 'none');
 
     document.getElementById('titulo-inicial').style.display = 'block';
     document.getElementById('btn-voltar').style.display = 'none';
 }
->>>>>>> parent of 734f97f (Revert "Merge branch 'Atualização-pagina-produtos'")
->>>>>>> Stashed changes
