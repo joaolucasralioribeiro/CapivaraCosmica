@@ -1,10 +1,11 @@
+
 main {
-    /* height: calc(100vh - 110px); */
+    height: calc(100vh - 110px);
     background: center / cover no-repeat white;
 }
 
-aside#cards-prod {
     /* Config para ajustar o carrossel em telas maiores */
+.d-block {
     max-height: 80vh;
     object-fit: contain;
 }
@@ -29,26 +30,54 @@ aside.cards-prod {
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-    width: 96vw;
 }
 
-aside#cards-prod h1 {
+aside.cards-prod h1 {
     padding: 10px;
 }
 
 div.prod {
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 1em;
+    overflow: hidden;
+    text-align: center;
+
+    margin: 10px;
     width: 100%;
     color: white;
     background-color: #24426A;
-    box-shadow: 1px 1px 5px black;
     box-shadow: 0px 0px 5px black;
 }
 
+div.prod p {
+    font-weight: bold;
+    margin: 0;
+    padding: 10px;
+}
 
-    /* Configs da img do whats no canto da tela */
+img.imgprod {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+
+    margin: auto;
+}
+
 .contatosFixed {
     display: flex;
     flex-direction: column;
+    width: fit-content;
+    position: fixed;
+    bottom: 5%;
+
+}
+
+.logoContatoFixed {
+    width: 70px;
+    height: auto;
     padding: 10px;
     padding-block: 20px;
 }
+
