@@ -16,7 +16,7 @@ html,
 body {
     font-family: var(--fonte1);
 }
-
+    /* Navibar */
 header {
     display: flex;
     align-items: center;
@@ -47,7 +47,7 @@ header span {
     padding: .75rem;
     border-radius: 1.5rem;
     border: .1rem solid #F2BB13;
-    margin-left: 1rem;
+    margin-right: 1.05em;
     color: #F2BB13;
     cursor: pointer;
 }
@@ -63,7 +63,7 @@ header span:hover {
 }
 
 img#logo {
-    height: 15vh;
+    height: 12vh;
     padding: 0.5rem;
     margin: auto;
 }
@@ -80,7 +80,7 @@ menu>ul {
     height: 100vh;
     background-color: #24426A;
     clip-path: circle(100px at 10% 10%);
-    transition: 1s ease-out;
+    animation: reveal 1s forwards cubic-bezier(0.77, 0, 0.175, 1);
     z-index: 5;
 
     flex-direction: column;
@@ -93,12 +93,10 @@ menu>ul {
     list-style-type: none;
 }
 
-.nav-list,
+/* .nav-list,
 .nav-active {
-    clip-path: circle(1500px at 10% 10%);
-    pointer-events: all;
-    padding: 0;
-}
+    
+} */
 
 menu>ul>li>a {
     display: block;
@@ -108,6 +106,47 @@ menu>ul>li>a {
     z-index: 6;
 }
 
+.nav-list {
+    clip-path: circle(1500px at 10% 10%);
+    pointer-events: all;
+    padding: 0;
+}
+
 .d-none {
     display: none !important;
+}
+
+    /* Configs da img do whats no canto da tela */
+.contatosFixed {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    position: fixed;
+    bottom: 5%;
+
+}
+
+.logoContatoFixed {
+    width: 70px;
+    height: auto;
+    padding: 10px;
+    padding-block: 20px;
+}
+    /* Configs do Footer */ 
+
+#rodape {
+    display: flex;
+    flex-direction: column;
+
+    background-color: #24426A;
+    padding: 2em;
+    padding-left: 4em;
+}
+
+#contato {
+    color: white;
+}
+
+.icones {
+    width: 70px;
 }
