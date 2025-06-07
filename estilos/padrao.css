@@ -34,7 +34,7 @@ header a {
     text-shadow: 1.5px 1.5px 1px;
 }
 
-header .nav-list  a:hover {
+header a:hover {
 
     color: white;
     transition-duration: 0.5s;
