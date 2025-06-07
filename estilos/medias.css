@@ -9,8 +9,8 @@
         display: none;
     }
 
-    img#logo {
-        margin: 0px;
+      img#logo {
+        margin: 0;
     }
 
     menu#itens {
@@ -131,3 +131,4 @@ Estilos base (mobile first) - até 304px */
     gap: 10%;
   }
 }
+
