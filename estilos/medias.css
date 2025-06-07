@@ -77,7 +77,7 @@ Estilos base (mobile first) - até 304px */
   padding: 15px;
   width: 100%;
   height: auto;
-  gap: 10px;
+  gap: 5%;
 }
 
 @media (min-width: 305px) and (max-width: 500px) {
@@ -85,10 +85,11 @@ Estilos base (mobile first) - até 304px */
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    margin-top: 0;
     height: auto;
-    width: 100%;
+    width: 60%;
     padding: 15px;
-    gap: 12px;
+    gap: 40px;
   }
 }
 
