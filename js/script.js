@@ -18,8 +18,8 @@ function clickMenu() {
 }
 
 // ANIMAÇÃO DE MENU
-const menu = document.querySelector(".menu");
-const header = document.querySelector(".nav");
+const menu = document.querySelector("#menu"); // corrigido para o ID correto do botão de menu
+const header = document.querySelector("header");
 if (menu && header) {
   menu.addEventListener("click", () => {
     header.classList.toggle("active");
@@ -31,6 +31,7 @@ function mostrarMenu() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
 
+// corrigido o parêntese mal fechado em window.addEventListener
 window.addEventListener("click", function (e) {
   if (!e.target.matches('.dropbtn')) {
     const myDropdown = document.getElementById("myDropdown");
@@ -38,4 +39,4 @@ window.addEventListener("click", function (e) {
       myDropdown.classList.remove('show');
     }
   }
-}
+});
