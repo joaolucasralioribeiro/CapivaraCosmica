@@ -218,14 +218,32 @@ h1 {
     background-position: center;
 }
 
+/* Container do produto */
+.product-card {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
 .product-info {
-    padding: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;  
+}
+
+
+.btn-warning {
+    margin-top: auto;  
+    align-self: center;
 }
 
 .product-title {
     margin: 0 0 10px;
     font-size: 1.1rem;
     color: #2c3e50;
+    text-align: center;
 }
 
 .product-price {
@@ -234,12 +252,6 @@ h1 {
     margin-bottom: 10px;
 }
 
-/* Botões */
-.btn-warning {
-    background-color: #f1c40f;
-    border-color: #f1c40f;
-    color: #2c3e50;
-}
 
 /* Overlay para mobile */
 .overlay {
