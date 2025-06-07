@@ -45,12 +45,11 @@ window.onclick = function(e) {
 
 
 
-// Toggle menu do header em mobile
         function toggleMenu() {
             document.getElementById('itens').classList.toggle('active');
         }
         
-        // Toggle sidebar
+
         function toggleSidebar() {
             const sidebar = document.getElementById('sidebar');
             const mainContent = document.getElementById('mainContent');
@@ -64,27 +63,26 @@ window.onclick = function(e) {
             }
         }
         
-        // Toggle dropdowns
+
         function toggleDropdown(event) {
             event.preventDefault();
             const parent = event.target.closest('.menu-item');
             const dropdown = parent.querySelector('.dropdown-menu');
             const toggle = parent.querySelector('.dropdown-toggle');
             
-            // Fecha outros dropdowns abertos
+
             document.querySelectorAll('.dropdown-menu').forEach(item => {
                 if (item !== dropdown) {
                     item.classList.remove('show');
                     item.previousElementSibling.classList.remove('active');
                 }
             });
-            
-            // Alterna o dropdown atual
+
             dropdown.classList.toggle('show');
             toggle.classList.toggle('active');
         }
         
-        // Fecha dropdowns ao clicar fora
+
         document.addEventListener('click', function(event) {
             if (!event.target.matches('.dropdown-toggle') && !event.target.closest('.dropdown-menu')) {
                 document.querySelectorAll('.dropdown-menu').forEach(item => {
@@ -93,8 +91,7 @@ window.onclick = function(e) {
                 });
             }
         });
-        
-        // Verifica o tamanho da tela ao carregar
+
         function checkScreenSize() {
             const sidebar = document.getElementById('sidebar');
             const mainContent = document.getElementById('mainContent');
