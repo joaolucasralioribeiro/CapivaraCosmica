@@ -1,34 +1,40 @@
- function mudouTamanho() {
-            if (window.innerWidth >= 750) {
-                itens.style.display = 'block'
-            } else {
-                itens.style.display = 'none'
-            }
-        }
-        function clickMenu() {
-            if (itens.style.display == 'block') {
-                itens.style.display = 'none'
-            } else {
-                itens.style.display = 'block'
-            }
-        }
+// MENU RESPONSIVO
+const itens = document.getElementById('itens');
 
-  
-        const menu = document.querySelector(".menu");
-        const header = document.querySelector(".nav");
-        menu.addEventListener("click", () => header.classList.toggle("active"));
+function mudouTamanho() {
+  if (window.innerWidth >= 750) {
+    itens.style.display = 'block';
+  } else {
+    itens.style.display = 'none';
+  }
+}
 
-//Função do dropdown na página de produtos
+function clickMenu() {
+  if (itens.style.display === 'block') {
+    itens.style.display = 'none';
+  } else {
+    itens.style.display = 'block';
+  }
+}
 
+// ANIMAÇÃO DE MENU
+const menu = document.querySelector(".menu");
+const header = document.querySelector(".nav");
+if (menu && header) {
+  menu.addEventListener("click", () => {
+    header.classList.toggle("active");
+  });
+}
+
+// DROPDOWN
 function mostrarMenu() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
 
-
-window.onclick = function(e) {
+window.addEventListener("click", function (e) {
   if (!e.target.matches('.dropbtn')) {
-  var myDropdown = document.getElementById("myDropdown");
-    if (myDropdown.classList.contains('show')) {
+    const myDropdown = document.getElementById("myDropdown");
+    if (myDropdown && myDropdown.classList.contains('show')) {
       myDropdown.classList.remove('show');
     }
   }
