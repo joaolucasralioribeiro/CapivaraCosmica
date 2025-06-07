@@ -17,14 +17,10 @@ function clickMenu() {
   }
 }
 
-
-const menu = document.querySelector("#menu"); 
-const header = document.querySelector("header");
-if (menu && header) {
-  menu.addEventListener("click", () => {
-    header.classList.toggle("active");
-  });
-}
+const menu = document.querySelector("#menu");
+const header = document.querySelector("#nav");
+menu.addEventListener("click", () => header.classList.toggle("active"));
+        
 
 
 function mostrarMenu() {

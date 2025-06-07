@@ -34,7 +34,7 @@
         gap: 2em;
     }
 
-    div#mais-pedidos {
+    div#exemplos {
         display: flex;
         flex-direction: row;
         justify-content: center;
