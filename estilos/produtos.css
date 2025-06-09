@@ -101,7 +101,7 @@ header {
   z-index: 900;
   overflow-y: auto;
   transition: transform 0.3s;
-  height: 67.9%;
+  height: 85%;
 }
 
 
@@ -282,6 +282,16 @@ h1 {
 
 .overlay.active {
     display: block;
+}
+
+
+.WhatsLogoFixed {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    z-index: 1000;
+    transition: all 0.3s ease;
+
 }
 
 
