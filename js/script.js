@@ -27,47 +27,9 @@
                 
 
 
-        function mostrarMenu() {
-        document.getElementById("myDropdown").classList.toggle("show");
-        }
+      
 
-
-        window.onclick = function(e) {
-        if (!e.target.matches('.dropbtn')) {
-        var myDropdown = document.getElementById("myDropdown");
-            if (myDropdown.classList.contains('show')) {
-            myDropdown.classList.remove('show');
-            }
-        }
-        };
-
-        // MOSTRAR PRODUTOS POR CATEGORIA
-        function mostrarCategoria(categoriaId) {
-        const categorias = document.querySelectorAll('.categoria');
-        categorias.forEach(div => div.style.display = 'none');
-
-        const divCategoria = document.getElementById(`div-${categoriaId}`);
-        if (divCategoria) {
-            divCategoria.style.display = 'block';
-        }
-
-        document.getElementById('titulo-inicial').style.display = 'none';
-        document.getElementById('btn-voltar').style.display = 'block';
-        }
-
-        function voltarAoInicio() {
-        const categorias = document.querySelectorAll('.categoria');
-        categorias.forEach(div => div.style.display = 'none');
-
-        document.getElementById('titulo-inicial').style.display = 'block';
-        document.getElementById('btn-voltar').style.display = 'none';
-        }
-
-
-        window.addEventListener("resize", mudouTamanho);
-        window.addEventListener("load", mudouTamanho);
-
-
+      
         function toggleMenu() {
             document.getElementById('itens').classList.toggle('active');
         }
