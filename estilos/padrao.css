@@ -93,11 +93,6 @@ menu>ul {
     list-style-type: none;
 }
 
-/* .nav-list,
-.nav-active {
-    
-} */
-
 menu>ul>li>a {
     display: block;
     justify-content: space-between;

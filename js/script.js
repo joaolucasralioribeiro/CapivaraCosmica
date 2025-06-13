@@ -1,5 +1,5 @@
  function mudouTamanho() {
-            if (window.innerWidth >= 750) {
+            if (window.innerWidth >= 768) {
                 itens.style.display = 'block'
             } else {
                 itens.style.display = 'none'
@@ -119,7 +119,7 @@ window.addEventListener("load", mudouTamanho);
             const sidebar = document.getElementById('sidebar');
             const mainContent = document.getElementById('mainContent');
             
-            if (window.innerWidth > 992) {
+            if (window.innerWidth > 992 ) {
                 sidebar.classList.add('active');
                 mainContent.classList.add('with-sidebar');
             } else {
