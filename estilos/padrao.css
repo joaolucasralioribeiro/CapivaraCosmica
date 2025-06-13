@@ -29,17 +29,19 @@ header a {
     font-size: 1.2rem;
     font-weight: bold;
     color: #F2BB13;
-    padding: 0.5rem;
+    padding: 0.8rem 1rem;
     text-decoration: none;
-    text-shadow: 1.5px 1.5px 1px;
+    text-shadow: 1.5px 1.5px 1px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    margin: 0 5px;
 }
 
 header a:hover {
-
     color: white;
-    transition-duration: 0.5s;
-    text-shadow: 1.5px 1.5px 1px;
-    background-color: rgba(0, 0, 0, 0.274);
+    background-color: rgba(36, 66, 106, 0.8);
+    text-shadow: 1.5px 1.5px 1px rgba(0, 0, 0, 0.5);
+    transform: translateY(-2px);
 }
 
 header span {
@@ -133,10 +135,6 @@ menu>ul>li>a {
 }
 
     /* Configs do Footer */ 
-
-footer {
-    
-}
 
 .FooterBanner {
     background-color: #24426A;
