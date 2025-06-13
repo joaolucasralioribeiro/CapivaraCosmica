@@ -10,11 +10,11 @@ body {
   background-color: #34495e;
   color: white;
   position: fixed;
-  top: 12.75vh;
+  top: 12vh;
   left: 0;
   z-index: 900;
   overflow-y: auto;
-  transition: transform 0.3s;
+ transition: transform 0.3s;
   height: 85%;
 }
 

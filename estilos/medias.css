@@ -47,15 +47,6 @@
         width: 30%;
     }
 
-    div.prod p {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        max-width: min-content;
-        white-space: nowrap;
-      
-        padding-left: 10px;
-    }
-
     img.imgprod {
         margin: 0;
     }
