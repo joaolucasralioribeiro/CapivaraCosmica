@@ -2,6 +2,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f5f5f5;
+      overflow-x: hidden;   
 }
 
 
@@ -16,6 +17,7 @@ header {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     position: relative;
     z-index: 100;
+   
 }
 
 #logo {
@@ -29,14 +31,14 @@ header {
     display: none;
 }
 
-/* Container dos itens de navegação */
+
 #itens {
     display: flex;
     justify-content: flex-end;
     width: auto;
 }
 
-/* Lista de navegação */
+
 .nav-list {
     display: flex;
     list-style: none;
@@ -71,25 +73,55 @@ header a:hover {
     transform: translateY(-2px);
 }
 
-/* ===== SIDEBAR/MENU LATERAL ===== */
-.sidebar {
-    width: 250px;
-    background-color: #34495e;
+
+header {
+    background-color: #24426A;
     color: white;
-    padding: 20px 0;
-    transition: all 0.3s;
-    transform: translateX(-250px);
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     position: fixed;
-    top: 70px;
+    top: 0;
     left: 0;
-    bottom: 0;
-    z-index: 90;
-    overflow-y: auto;
+    right: 0;
+    z-index: 1000; 
+    height: 15vh; 
 }
+
+
+.sidebar {
+  width: 250px;
+  background-color: #34495e;
+  color: white;
+  position: fixed;
+  top: 15vh;
+  left: 0;
+  z-index: 900;
+  overflow-y: auto;
+  transition: transform 0.3s;
+  height: 85%;
+}
+
+
+
 
 .sidebar.active {
     transform: translateX(0);
 }
+
+
+.main-content {
+    margin-top: 70px;  
+    padding: 20px;
+    transition: margin-left 0.3s;
+}
+
+.main-content.with-sidebar {
+    margin-left: 250px;
+}
+
 
 .sidebar-header {
     padding: 0 20px 20px;
@@ -97,13 +129,14 @@ header a:hover {
     margin-top: 15%;
 }
 
+
 .sidebar-title {
     font-size: 1.3rem;
     margin: 0;
     color: #f1c40f;
 }
 
-/* Menu da sidebar */
+
 .sidebar-menu {
     list-style: none;
     padding: 0;
@@ -127,14 +160,14 @@ header a:hover {
     color: #f1c40f;
 }
 
-/* Ícones da sidebar */
+
 .menu-item i {
     margin-right: 10px;
     width: 20px;
     text-align: center;
 }
 
-/* Submenus dropdown */
+
 .dropdown-menu {
     list-style: none;
     padding: 0;
@@ -168,16 +201,6 @@ header a:hover {
 }
 
 /* ===== CONTEÚDO PRINCIPAL ===== */
-.main-content {
-    flex: 1;
-    padding: 20px;
-    margin-left: 0;
-    transition: margin-left 0.3s;
-}
-
-.main-content.with-sidebar {
-    margin-left: 250px;
-}
 
 h1 {
     color: #2c3e50;
@@ -259,6 +282,16 @@ h1 {
 
 .overlay.active {
     display: block;
+}
+
+
+.WhatsLogoFixed {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    z-index: 1000;
+    transition: all 0.3s ease;
+
 }
 
 

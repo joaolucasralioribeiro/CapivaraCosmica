@@ -25,7 +25,6 @@
         <menu id="itens">
             <ul class="nav-list">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#">Animes</a></li>
                 <li><a href="#">Sobre Nós</a></li>
             </ul>
         </menu>
@@ -41,38 +40,55 @@
             <ul class="sidebar-menu">
                 <li class="menu-item">
                     <a href="#" class="dropdown-toggle" onclick="toggleDropdown(event)">
-                        <i class="fas fa-tv"></i> Tecnologia
+                        <i class="fas fa-gem"></i> Colecionáveis
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Smartphones</a></li>
-                        <li><a href="#">Notebooks</a></li>
-                        <li><a href="#">Acessórios</a></li>
-                        <li><a href="#">Gadgets</a></li>
+                        <li><a href="#">Action Figures (estático)</a></li>
+                        <li><a href="#">Action Figures (articulados)</a></li>
+                        <li><a href="#">Toy Art</a></li>
+                         <li><a href="#">Mini Colecionáveis</a></li>
+                      
+                    </ul>
+                </li>
+                 <li class="menu-item">
+                    <a href="#" class="dropdown-toggle" onclick="toggleDropdown(event)">
+                        <i class="fa-solid fa-gift"></i> Presenteáveis
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Bolsa</a></li>
+                        <li><a href="#">Carteira</a></li>
+                        <li><a href="#">Caneca</a></li>
+                        <li><a href="#">Porta Copo</a></li>
+                        <li><a href="#">Tapete</a></li>
+                        <li><a href="#">Guarrafa</a></li>
+                         <li><a href="#">Placa Decorativa</a></li>
+                 
                     </ul>
                 </li>
                
                 <li class="menu-item">
                     <a href="#" class="dropdown-toggle" onclick="toggleDropdown(event)">
-                        <i class="fas fa-film"></i> Anime
+                       <i class="fa-solid fa-film"></i> Cultura Pop
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Action Figures</a></li>
-                        <li><a href="#">Posters</a></li>
-                        <li><a href="#">Cosplay</a></li>
+                        <li><a href="#">Filmes</a></li>
+                        <li><a href="#">Animes</a></li>
+                        <li><a href="#">Séries</a></li>
                         <li><a href="#">Mangás</a></li>
                     </ul>
                 </li>
+               
                 <li class="menu-item">
                     <a href="#" class="dropdown-toggle" onclick="toggleDropdown(event)">
-                        <i class="fas fa-tshirt"></i> Moda Geek
+                        <i class="fa-solid fa-shirt"></i> Moda Geek
                     </a>
                     <ul class="dropdown-menu">
                         <li><a href="#">Camisetas</a></li>
-                        <li><a href="#">Moletons</a></li>
-                        <li><a href="#">Acessórios</a></li>
-                        <li><a href="#">Colecionáveis</a></li>
+                        <li><a href="#">Bonés</a></li>
+                 
                     </ul>
                 </li>
+                
                 <li class="menu-item">
                     <a href="#">
                         <i class="fas fa-fire"></i> Ofertas
@@ -87,7 +103,7 @@
         </nav>
 
         <main class="main-content" id="mainContent">
-            <h1 style="text-align: center;">Produtos Geek:</h1>
+            <h1 style="text-align: center; margin-top: 5%;">Produtos Geek:</h1>
             <button class="btn btn-primary mb-3 d-md-none" onclick="toggleSidebar()">
                 <i class="fas fa-filter"></i> Filtros
             </button>
@@ -134,6 +150,27 @@
                         <button class="btn btn-warning btn-sm">Comprar</button>
                     </div>
                 </div>
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url('imagens/funkpop/animes-desenhos/CAPIVARA\ FUNKO\ POP-109.jpg')"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Produto 7</h3>
+                        <button class="btn btn-warning btn-sm">Comprar</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url('imagens/funkpop/animes-desenhos/CAPIVARA\ FUNKO\ POP-112.jpg')"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Produto 8</h3>
+                        <button class="btn btn-warning btn-sm">Comprar</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url('imagens/funkpop/animes-desenhos/CAPIVARA\ FUNKO\ POP-121.jpg')"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Produto 9</h3>
+                        <button class="btn btn-warning btn-sm">Comprar</button>
+                    </div>
+                </div>
             </div>
         </main>
     </div>
@@ -166,5 +203,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"> // Link do Bootstrap
     </script>
+
+
 </body>
 </html>
