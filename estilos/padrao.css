@@ -134,6 +134,10 @@ menu>ul>li>a {
 
     /* Configs do Footer */ 
 
+footer {
+    
+}
+
 .FooterBanner {
     background-color: #24426A;
     display: flex;
