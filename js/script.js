@@ -16,7 +16,7 @@
                     } else {
                         itens.style.display = 'block'
                         menu.style.position = 'fixed'
-                        menu.style.left = '90%'
+                        menu.style.left = '85vw'
                     }
                 }
 
