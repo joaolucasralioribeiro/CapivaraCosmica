@@ -54,7 +54,7 @@ div.prod {
 div.prod p {
     overflow: hidden;
     text-overflow: ellipsis;
-    max-width: 50vw;
+    max-width: 60vw;
     white-space: nowrap;
     font-weight: bold;
     margin: 0;
