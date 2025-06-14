@@ -16,7 +16,8 @@ html,
 body {
     font-family: var(--fonte1);
 }
-    /* Navibar */
+
+/* Navibar */
 header {
     display: flex;
     align-items: center;
@@ -113,13 +114,13 @@ menu>ul>li>a {
     display: none !important;
 }
 
-    /* Configs da img do whats no canto da tela */
+/* Configs da img do whats no canto da tela */
 
 .WhatsLogoFixed {
     display: flex;
     width: fit-content;
     position: fixed;
-    bottom: 8%;
+    bottom: 15%;
 
 }
 
@@ -134,7 +135,7 @@ menu>ul>li>a {
     transition: transform 0.5s ease;
 }
 
-    /* Configs do Footer */ 
+/* Configs do Footer */
 
 .FooterBanner {
     background-color: #24426A;
@@ -169,7 +170,7 @@ menu>ul>li>a {
 }
 
 .FooterBanner p {
-    color: #000000;
+    color: #eee9e9;
     font-size: 0.8rem;
     margin: 0.5rem 0;
 }
