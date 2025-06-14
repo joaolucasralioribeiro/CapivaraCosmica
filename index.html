@@ -29,76 +29,113 @@
     </header>
     <main>
         <!-- Carrossel do topo da página (Bootstrap) -->
-        <div id="carouselExampleCaptions" class="carousel slide">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
+         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+            <img src="imagens/Goku-paisagem.jpeg" class="d-block w-100" alt="Goku-Action-Figure" id="goku">
+            <div class="carousel-caption  d-md-block">
+                <h5>Goku SS2</h5>         
             </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="imagens/Goku-paisagem.jpeg" class="d-block w-100" alt="Goku-Action-Figure" id="goku">
-                    <div class="carousel-caption  d-md-block">
-                        <h5>Goku SS2</h5>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="imagens/F1 - perfil.jpeg" class="d-block w-100" alt="Formula-1-Funko" id="f1">
-                    <div class="carousel-caption d-md-block">
-                        <h5>Ayrton Senna</h5>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="imagens/Game-thrones-perfil.jpeg" class="d-block w-100" alt="Game-of-thrones-Funko"
-                        id="got">
-                    <div class="carousel-caption d-md-block">
-                        <h5>Daenerys Targaryen</h5>
-                    </div>
-                </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+            <div class="carousel-item">
+            <img src="imagens/F1 - perfil.jpeg" class="d-block w-100" alt="Formula-1-Funko" id="f1">
+            <div class="carousel-caption d-md-block">
+                <h5>Ayrton Senna</h5>
+            </div>
+            </div>
+            <div class="carousel-item">
+            <img src="imagens/Game-thrones-perfil.jpeg" class="d-block w-100" alt="Game-of-thrones-Funko" id="got">
+            <div class="carousel-caption d-md-block">
+                <h5>Daenerys Targaryen</h5>
+            </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
         </div>
         <!-- Exemplos de produtos mais vendidos -->
         <aside class="cards-prod">
             <h1>Best Sellers 🔥</h1>
+            <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner" style="border-radius: 1em;">
+                <div class="carousel-item active">
+                    <img src="imagens/Eleven-perfil.jpeg" class="d-block w-100" alt="Eleven-perfil" id="eleven-perf">
+                    <p class="desc">Funko Pop Eleven - Stranger Things</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="imagens/Goku-perfil.jpeg" class="d-block w-100" alt="Goku-perfil" id="goku-perf">
+                    <p class="desc">Action Figure Goku - Dragon Ball Z</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="imagens/Tanjirou-perfil.jpeg" class="d-block w-100" alt="Tanjirou-perfil" id="tanj-perf">
+                    <p class="desc">Action Figure do Tanjirou - Demon Slayer</p>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            </div>
             <div class="exemplos">
                 <div class="prod"><img class="imgprod" src="imagens/Eleven-perfil.jpeg" alt="Eleven-Funko-Pop">
-                    <p>Funko Pop Eleven - Stranger Things</p>
+                    <p class="desc">Funko Pop Eleven - Stranger Things</p>
                 </div>
                 <div class="prod"><img class="imgprod" src="imagens/Goku-perfil.jpeg" alt="Goku">
-                    <p>Action Figure Goku - Dragon Ball Z</p>
+                    <p class="desc">Action Figure Goku - Dragon Ball Z</p>
                 </div>
                 <div class="prod"><img class="imgprod" src="imagens/Tanjirou-perfil.jpeg" alt="Storm-Funko-Pop">
-                    <p>Action Figure do Tanjirou - Demon Slayer</p>
+                    <p class="desc">Action Figure do Tanjirou - Demon Slayer</p>
                 </div>
             </div>
         </aside>
         <aside class="cards-prod">
             <h1>Presenteáveis 🎁</h1>
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-inner" style="border-radius: 1em;">
+                    <div class="carousel-item active">
+                    <img src="imagens/Eleven-frente.jpeg" class="d-block w-100" alt="Eleven-Funko-Pop" id="eleven-fren">
+                    <p class="desc">Exemplo de de escrição do produto aqui</p>
+                    </div>
+                    <div class="carousel-item">
+                    <img src="imagens/Goku-frente.jpeg" class="d-block w-100" alt="Goku-Action-Figure" id="goku-fren">
+                    <p class="desc">Exemplo de de escrição do produto aqui</p>
+                    </div>
+                    <div class="carousel-item">
+                    <img src="imagens/Tanjirou-frente.jpeg" class="d-block w-100" alt="Tanjirou-frente" id="tanj-fren">
+                    <p class="desc">Exemplo de de escrição do produto aqui</p>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                </div>
             <div class="exemplos">
                 <div class="prod">
                     <img class="imgprod" src="imagens/Eleven-frente.jpeg" alt="">
-                    <p>Exemplo de de escrição do produto aqui</p>
+                    <p class="desc">Exemplo de de escrição do produto aquiooo</p>
                 </div>
                 <div class="prod">
                     <img class="imgprod" src="imagens/Goku-frente.jpeg" alt="">
-                    <p>Exemplo de de escrição do produto aqui</p>
+                    <p class="desc">Exemplo de de escrição do produto aqui</p>
                 </div>
                 <div class="prod">
                     <img class="imgprod" src="imagens/Tanjirou-frente.jpeg" alt="">
-                    <p>Exemplo de de escrição do produto aqui</p>
+                    <p class="desc">Exemplo de de escrição do produto aqui</p>
                 </div>
             </div>
         </aside>

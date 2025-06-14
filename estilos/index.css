@@ -37,6 +37,46 @@ aside.cards-prod h1 {
     padding: 10px;
 }
 
+#carouselExampleCaptions {
+    max-width: 287.5px;
+}
+
+div.exemplos {
+    display: none;
+}
+
+#eleven-perf {
+    max-width: 300px;
+    height: 70vh;
+}
+
+#goku-perf {
+    max-width: 300px;
+    height: 70vh;
+}
+
+#tanj-perf {
+    max-width: 300px;
+    min-height: 70vh;
+    object-fit: cover;
+}
+
+#eleven-fren {
+    max-width: 300px;
+    height: 70vh;
+}
+
+#goku-fren {
+    max-width: 300px;
+    height: 70vh;
+}
+
+#tanj-fren {
+    max-width: 300px;
+    min-height: 70vh;
+    object-fit: cover;
+}
+
 div.prod {
     display: flex;
     flex-direction: column;
@@ -51,10 +91,12 @@ div.prod {
     box-shadow: 0px 0px 5px black;
 }
 
-div.prod p {
+p.desc {
+    background-color: #24426A;
+    color: white;
     overflow: hidden;
     text-overflow: ellipsis;
-    max-width: 60vw;
+    max-width: 300px;
     white-space: nowrap;
     font-weight: bold;
     margin: 0;

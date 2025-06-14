@@ -34,6 +34,14 @@
         gap: 2em;
     }
 
+    #carouselExample {
+        display: none;
+    }
+
+    #carouselExampleCaptions {
+        display: none;
+    }
+
     div.exemplos {
         display: flex;
         flex-direction: row;
@@ -45,6 +53,7 @@
         display: flex;
         flex-direction: column;
         width: 30%;
+        min-width: 310px;
     }
 
     div.prod p {
