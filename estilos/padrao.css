@@ -17,11 +17,9 @@ body {
     font-family: var(--fonte1);
 }
 
-/* Navibar */
 header {
     display: flex;
     align-items: center;
-
     background-color: #24426A;
     justify-content: space-between;
 }

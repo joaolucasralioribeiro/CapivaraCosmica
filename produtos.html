@@ -37,6 +37,9 @@
 
     <div class="container">
         <nav class="sidebar" id="sidebar">
+            <button class="sidebar-close-btn" onclick="toggleSidebar()">
+            <i class="fa-solid fa-xmark"></i>
+    </button>
             <div class="sidebar-header">
                 <h2 class="sidebar-title"><i class="fas fa-gamepad"></i> Categorias</h2>
             </div>
@@ -46,9 +49,9 @@
                         <i class="fas fa-gem"></i> Colecionáveis
                     </a>
                     <ul class="dropdown-menu">
+                        <li><a href="#">Toy Art</a></li>
                         <li><a href="#">Action Figures (estático)</a></li>
                         <li><a href="#">Action Figures (articulados)</a></li>
-                        <li><a href="#">Toy Art</a></li>
                         <li><a href="#">Mini Colecionáveis</a></li>
 
                     </ul>
@@ -106,7 +109,7 @@
         </nav>
 
         <main class="main-content" id="mainContent">
-            <h1 style="text-align: center; margin-top: 5%;">Produtos Geek:</h1>
+            <h1 style="text-align: center;">Produtos Geek:</h1>
             <button class="btn btn-primary mb-3 d-md-none" onclick="toggleSidebar()">
                 <i class="fas fa-filter"></i> Filtros
             </button>
@@ -161,16 +164,7 @@
                             onclick="enviarWhatsApp('Funko Pop - Patamon')">Comprar</button>
                     </div>
                 </div>
-                <div class="product-card">
-                    <div class="product-image"
-                        style="background-image: url('imagens/funkpop/animes-desenhos/CAPIVARA\ FUNKO\ POP-105.jpg')">
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-title">Funko Pop - Alien Remix</h3>
-                        <button class="btn btn-warning btn-sm"
-                            onclick="enviarWhatsApp('Funko Pop - Alien Remix')">Comprar</button>
-                    </div>
-                </div>
+                
                 <div class="product-card">
                     <div class="product-image"
                         style="background-image: url('imagens/funkpop/animes-desenhos/CAPIVARA\ FUNKO\ POP-109.jpg')">
