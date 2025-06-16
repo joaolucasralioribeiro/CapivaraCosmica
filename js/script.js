@@ -125,7 +125,7 @@ document.querySelectorAll('.dropdown-menu a').forEach(item => {
 });
 
 
-// Ao carregar a página
+
 document.addEventListener('DOMContentLoaded', function() {
     
     const colecionaveisToggle = document.querySelector('.menu-item:first-child .dropdown-toggle');
