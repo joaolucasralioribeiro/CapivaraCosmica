@@ -1,21 +1,25 @@
+
 function mudouTamanho() {
+    const itens = document.getElementById('itens');
     if (window.innerWidth >= 768) {
-        itens.style.display = 'block'
+        itens.style.display = 'block';
     } else {
-        itens.style.display = 'none'
+        itens.style.display = 'none';
     }
 }
 
 function clickMenu() {
     const menu = document.getElementById("menu");
-    if (itens.style.display == 'block') {
-        itens.style.display = 'none'
-        menu.style.position = 'relative'
-        menu.style.left = '0%'
+    const itens = document.getElementById('itens');
+    
+    if (itens.style.display === 'block') {
+        itens.style.display = 'none';
+        menu.style.position = 'relative';
+        menu.style.left = '0%';
     } else {
-        itens.style.display = 'block'
-        menu.style.position = 'fixed'
-        menu.style.left = '85vw'
+        itens.style.display = 'block';
+        menu.style.position = 'fixed';
+        menu.style.left = '85vw';
     }
 }
 
@@ -26,6 +30,7 @@ menu.addEventListener("click", () => header.classList.toggle("active"));
 function toggleMenu() {
     document.getElementById('itens').classList.toggle('active');
 }
+
 
 function toggleSidebar() {
     const sidebar = document.getElementById('sidebar');
@@ -38,6 +43,7 @@ function toggleSidebar() {
         document.getElementById('mainContent').classList.toggle('with-sidebar');
     }
 }
+
 
 function toggleDropdown(event) {
     event.preventDefault();
@@ -65,6 +71,7 @@ document.addEventListener('click', function(event) {
     }
 });
 
+
 function checkScreenSize() {
     const sidebar = document.getElementById('sidebar');
     const mainContent = document.getElementById('mainContent');
@@ -79,28 +86,46 @@ function checkScreenSize() {
 }
 
 
-const produtos = [
-    { nome: "Funko Pop - Corazon", categoria: "Colecionáveis", subcategoria: "Toy Art", imagem: "imagens/funkpop/animes-desenhos/CAPIVARA FUNKO POP-10.jpg" },
-    { nome: "Funko Pop - Beetlejuice", categoria: "Colecionáveis", subcategoria: "Toy Art", imagem: "imagens/funkpop/animes-desenhos/CAPIVARA FUNKO POP-100.jpg" },
-    { nome: "Funko Pop - Felix", categoria: "Colecionáveis", subcategoria: "Toy Art", imagem: "imagens/funkpop/animes-desenhos/CAPIVARA FUNKO POP-102.jpg" },
-    { nome: "Funko Pop - Gomamon", categoria: "Colecionáveis", subcategoria: "Toy Art", imagem: "imagens/funkpop/animes-desenhos/CAPIVARA FUNKO POP-103.jpg" },
-    { nome: "Funko Pop - Patamon", categoria: "Colecionáveis", subcategoria: "Toy Art", imagem: "imagens/funkpop/animes-desenhos/CAPIVARA FUNKO POP-104.jpg" },
-    { nome: "Funko Pop - Alien Remix", categoria: "Colecionáveis", subcategoria: "Toy Art", imagem: "imagens/funkpop/animes-desenhos/CAPIVARA FUNKO POP-105.jpg" },
-    { nome: "Funko Pop - Yugi Muto", categoria: "Colecionáveis", subcategoria: "Toy Art", imagem: "imagens/funkpop/animes-desenhos/CAPIVARA FUNKO POP-109.jpg" },
-    { nome: "Funko Pop - Crabfeeder", categoria: "Colecionáveis", subcategoria: "Toy Art", imagem: "imagens/funkpop/animes-desenhos/CAPIVARA FUNKO POP-112.jpg" },
-    { nome: "Funko Pop - Liu Kang", categoria: "Colecionáveis", subcategoria: "Toy Art", imagem: "imagens/funkpop/animes-desenhos/CAPIVARA FUNKO POP-121.jpg" }
+
+const produtosToyArt = [
+    { nome: "Funko Pop - Corazon", imagem: "imagens/funkpop/animes-desenhos/CAPIVARA FUNKO POP-10.jpg" },
+    { nome: "Funko Pop - Beetlejuice", imagem: "imagens/funkpop/animes-desenhos/CAPIVARA FUNKO POP-100.jpg" },
+    { nome: "Funko Pop - Felix", imagem: "imagens/funkpop/animes-desenhos/CAPIVARA FUNKO POP-102.jpg" },
+    { nome: "Funko Pop - Gomamon", imagem: "imagens/funkpop/animes-desenhos/CAPIVARA FUNKO POP-103.jpg" },
+    { nome: "Funko Pop - Patamon", imagem: "imagens/funkpop/animes-desenhos/CAPIVARA FUNKO POP-104.jpg" },
+    { nome: "Funko Pop - Yugi Muto", imagem: "imagens/funkpop/animes-desenhos/CAPIVARA FUNKO POP-109.jpg" },
+    { nome: "Funko Pop - Crabfeeder", imagem: "imagens/funkpop/animes-desenhos/CAPIVARA FUNKO POP-112.jpg" },
+    { nome: "Funko Pop - Liu Kang", imagem: "imagens/funkpop/animes-desenhos/CAPIVARA FUNKO POP-121.jpg" }
 ];
 
-function exibirProdutos(categoria = "Colecionáveis", subcategoria = "Toy Art") {
+const produtosActionFiguresEstaticos = [
+    { nome: "Careca", imagem: "imagens/actionfigures/animes/FIGURES_-21.JPG" },
+    { nome: "Bangela", imagem: "imagens/actionfigures/filmes/FIGURES_.JPG" }
+];
+
+const produtosActionFiguresArticulados = [
+     { nome: "Mina ali", imagem: "imagens/actionfigures-articulados/FIGURES_-56.JPG" },
+];
+
+const produtosMiniColecionaveis = [
+    
+];
+
+
+
+
+
+
+function exibirProdutos(produtos) {
     const produtosGrid = document.querySelector('.products-grid');
     produtosGrid.innerHTML = '';
 
-    const produtosFiltrados = produtos.filter(produto => 
-        produto.categoria === categoria && 
-        (!subcategoria || produto.subcategoria === subcategoria)
-    );
+    if (produtos.length === 0) {
+        produtosGrid.innerHTML = '<p class="no-products">Nenhum produto encontrado nesta categoria.</p>';
+        return;
+    }
 
-    produtosFiltrados.forEach(produto => {
+    produtos.forEach(produto => {
         const productCard = document.createElement('div');
         productCard.classList.add('product-card');
         productCard.innerHTML = `
@@ -115,34 +140,52 @@ function exibirProdutos(categoria = "Colecionáveis", subcategoria = "Toy Art") 
 }
 
 
-document.querySelectorAll('.dropdown-menu a').forEach(item => {
-    item.addEventListener('click', (event) => {
-        event.preventDefault();
-        const categoria = "Colecionáveis"; 
-        const subcategoria = event.target.textContent.trim();
-        exibirProdutos(categoria, subcategoria);
-    });
-});
-
-
-
 document.addEventListener('DOMContentLoaded', function() {
-    
+
     const colecionaveisToggle = document.querySelector('.menu-item:first-child .dropdown-toggle');
-    if(colecionaveisToggle) {
+    if (colecionaveisToggle) {
         colecionaveisToggle.classList.add('active');
         const dropdownMenu = colecionaveisToggle.nextElementSibling;
         dropdownMenu.classList.add('show');
     }
+
+
+
+    document.querySelectorAll('.dropdown-menu a').forEach(item => {
+        item.addEventListener('click', (event) => {
+            event.preventDefault();
+            const subcategoria = item.getAttribute('data-subcategoria');
+            
+            switch(subcategoria) {
+                case 'toy-art':
+                    exibirProdutos(produtosToyArt);
+                    break;
+                case 'action-figures-estaticos':
+                    exibirProdutos(produtosActionFiguresEstaticos);
+                    break;
+                case 'action-figures-articulados':
+                    exibirProdutos(produtosActionFiguresArticulados);
+                    break;
+                case 'mini-colecionaveis':
+                    exibirProdutos(produtosMiniColecionaveis);
+                    break;
+                default:
+                    exibirProdutos(produtosToyArt); 
+            }
+        });
+    });
     
 
-    exibirProdutos();
     
-
+    exibirProdutos(produtosToyArt);
     checkScreenSize();
 });
 
-window.addEventListener('resize', checkScreenSize);
+window.addEventListener('resize', function() {
+    checkScreenSize();
+    mudouTamanho();
+});
+
 
 function enviarWhatsApp(produto) {
     const numero = "5517991641770";

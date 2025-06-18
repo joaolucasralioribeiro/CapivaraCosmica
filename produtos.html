@@ -48,13 +48,12 @@
                     <a href="#" class="dropdown-toggle" onclick="toggleDropdown(event)">
                         <i class="fas fa-gem"></i> Colecionáveis
                     </a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Toy Art</a></li>
-                        <li><a href="#">Action Figures (estático)</a></li>
-                        <li><a href="#">Action Figures (articulados)</a></li>
-                        <li><a href="#">Mini Colecionáveis</a></li>
-
-                    </ul>
+                     <ul class="dropdown-menu">
+                    <li><a href="#" data-subcategoria="toy-art">Toy Art</a></li>
+                    <li><a href="#" data-subcategoria="action-figures-estaticos">Action Figures (estático)</a></li>
+                    <li><a href="#" data-subcategoria="action-figures-articulados">Action Figures (articulados)</a><li>
+                <li><a href="#" data-subcategoria="mini-colecionaveis">Mini Colecionáveis</a></li>
+                </ul>
                 </li>
                 <li class="menu-item">
                     <a href="#" class="dropdown-toggle" onclick="toggleDropdown(event)">
@@ -109,92 +108,13 @@
         </nav>
 
         <main class="main-content" id="mainContent">
+                    
             <h1 style="text-align: center;">Produtos Geek:</h1>
             <button class="btn btn-primary mb-3 d-md-none" onclick="toggleSidebar()">
                 <i class="fas fa-filter"></i> Filtros
             </button>
             <div class="products-grid">
-                <div class="product-card">
-                    <div class="product-image"
-                        style="background-image: url('imagens/funkpop/animes-desenhos/CAPIVARA\ FUNKO\ POP-10.jpg')">
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-title">Funko Pop - Corazon</h3>
-                        <button class="btn btn-warning btn-sm"
-                            onclick="enviarWhatsApp('Funko Pop - Corazon')">Comprar</button>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image"
-                        style="background-image: url('imagens/funkpop/animes-desenhos/CAPIVARA\ FUNKO\ POP-100.jpg')">
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-title">Funko Pop - Beetlejuice</h3>
-                        <button class="btn btn-warning btn-sm"
-                            onclick="enviarWhatsApp('Funko Pop - Beetlejuice')">Comprar</button>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image"
-                        style="background-image: url('imagens/funkpop/animes-desenhos/CAPIVARA\ FUNKO\ POP-102.jpg')">
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-title">Funko Pop - Felix</h3>
-                        <button class="btn btn-warning btn-sm"
-                            onclick="enviarWhatsApp('Funko Pop - Felix')">Comprar</button>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image"
-                        style="background-image: url('imagens/funkpop/animes-desenhos/CAPIVARA\ FUNKO\ POP-103.jpg')">
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-title">Funko Pop - Gomamon</h3>
-                        <button class="btn btn-warning btn-sm"
-                            onclick="enviarWhatsApp('Funko Pop - Gomamon')">Comprar</button>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image"
-                        style="background-image: url('imagens/funkpop/animes-desenhos/CAPIVARA\ FUNKO\ POP-104.jpg')">
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-title">Funko Pop - Patamon</h3>
-                        <button class="btn btn-warning btn-sm"
-                            onclick="enviarWhatsApp('Funko Pop - Patamon')">Comprar</button>
-                    </div>
-                </div>
-                
-                <div class="product-card">
-                    <div class="product-image"
-                        style="background-image: url('imagens/funkpop/animes-desenhos/CAPIVARA\ FUNKO\ POP-109.jpg')">
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-title">Funko Pop - Yugi Muto</h3>
-                        <button class="btn btn-warning btn-sm"
-                            onclick="enviarWhatsApp('Funko Pop - Yugi Muto')">Comprar</button>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image"
-                        style="background-image: url('imagens/funkpop/animes-desenhos/CAPIVARA\ FUNKO\ POP-112.jpg')">
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-title">Funko Pop - Crabfeeder</h3>
-                        <button class="btn btn-warning btn-sm"
-                            onclick="enviarWhatsApp('Funko Pop - Crabfeeder')">Comprar</button>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image"
-                        style="background-image: url('imagens/funkpop/animes-desenhos/CAPIVARA\ FUNKO\ POP-121.jpg')">
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-title">Funko Pop - Liu Kang</h3>
-                        <button class="btn btn-warning btn-sm"
-                            onclick="enviarWhatsApp('Funko Pop - Liu Kang')">Comprar</button>
-                    </div>
-                </div>
+              
             </div>
         </main>
     </div>
@@ -225,7 +145,7 @@
     </footer>
     <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"> // Link do Bootstrap
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"> // 
         </script>
     <script>
         function enviarWhatsApp(produto) {
