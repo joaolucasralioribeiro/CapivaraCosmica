@@ -260,4 +260,21 @@
 }
 
 
+        @media (max-width: 768px) {
+            .modal-content {
+                flex-direction: column;
+            }
+            
+            .modal-product-image,
+            .modal-product-info {
+                width: 100%;
+            }
+            
+            .modal-product-image {
+                height: 300px;
+            }
 
+            .filter-options {
+                grid-template-columns: 1fr;
+            }
+        }
