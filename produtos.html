@@ -16,7 +16,140 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
     <title>Produtos</title>
     <style>
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.8);
+        }
 
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 800px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .modal-product-image {
+            width: 50%;
+            height: 400px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .modal-product-info {
+            width: 50%;
+            padding: 0 20px;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .close:hover {
+            color: black;
+        }
+
+        /* Filter Modal Styles */
+        .filter-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.7);
+            z-index: 1100;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .filter-modal-content {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 500px;
+            box-shadow: 0 5px 30px rgba(0,0,0,0.3);
+            position: relative;
+            animation: modalFadeIn 0.3s;
+        }
+
+        @keyframes modalFadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .filter-options {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .filter-btn {
+            padding: 12px;
+            background-color: #24426A;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-size: 1rem;
+        }
+
+        .filter-btn:hover {
+            background-color: #1a3355;
+            transform: translateY(-2px);
+        }
+
+        .close-filter {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 1.8rem;
+            color: #777;
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+
+        .close-filter:hover {
+            color: #333;
+        }
+
+        @media (max-width: 768px) {
+            .modal-content {
+                flex-direction: column;
+            }
+            
+            .modal-product-image,
+            .modal-product-info {
+                width: 100%;
+            }
+            
+            .modal-product-image {
+                height: 300px;
+            }
+
+            .filter-options {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
 
@@ -38,8 +171,8 @@
     <div class="container">
         <nav class="sidebar" id="sidebar">
             <button class="sidebar-close-btn" onclick="toggleSidebar()">
-            <i class="fa-solid fa-xmark"></i>
-    </button>
+                <i class="fa-solid fa-xmark"></i>
+            </button>
             <div class="sidebar-header">
                 <h2 class="sidebar-title"><i class="fas fa-gamepad"></i> Categorias</h2>
             </div>
@@ -48,59 +181,56 @@
                     <a href="#" class="dropdown-toggle" onclick="toggleDropdown(event)">
                         <i class="fas fa-gem"></i> Colecionáveis
                     </a>
-                     <ul class="dropdown-menu">
-                    <li><a href="#" data-subcategoria="toy-art">Toy Art</a></li>
-                    <li><a href="#" data-subcategoria="action-figures-estaticos">Action Figures (estático)</a></li>
-                    <li><a href="#" data-subcategoria="action-figures-articulados">Action Figures (articulados)</a><li>
-                <li><a href="#" data-subcategoria="mini-colecionaveis">Mini Colecionáveis</a></li>
-                </ul>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="#" data-subcategoria="toy-art" class="dropdown-toggle" onclick="openFilterModal(event)">Toy Art</a>
+                        </li>
+                        <li><a href="#" data-subcategoria="action-figures-estaticos">Action Figures (estático)</a></li>
+                        <li><a href="#" data-subcategoria="action-figures-articulados">Action Figures (articulados)</a></li>
+                        <li><a href="#" data-subcategoria="mini-colecionaveis">Mini Colecionáveis</a></li>
+                    </ul>
                 </li>
                 <li class="menu-item">
                     <a href="#" class="dropdown-toggle" onclick="toggleDropdown(event)">
                         <i class="fa-solid fa-gift"></i> Presenteáveis
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Bolsa</a></li>
-                        <li><a href="#">Carteira</a></li>
-                        <li><a href="#">Caneca</a></li>
-                        <li><a href="#">Porta Copo</a></li>
-                        <li><a href="#">Tapete</a></li>
-                        <li><a href="#">Guarrafa</a></li>
-                        <li><a href="#">Placa Decorativa</a></li>
-
+                        <li><a href="#" data-subcategoria="presenteaveis-bolsa">Bolsa</a></li>
+                        <li><a href="#" data-subcategoria="presenteaveis-carteira">Carteira</a></li>
+                        <li><a href="#" data-subcategoria="presenteaveis-caneca">Caneca</a></li>
+                        <li><a href="#" data-subcategoria="presenteaveis-porta-copo">Porta Copo</a></li>
+                        <li><a href="#" data-subcategoria="presenteaveis-tapete">Tapete</a></li>
+                        <li><a href="#" data-subcategoria="presenteaveis-guarrafa">Guarrafa</a></li>
+                        <li><a href="#" data-subcategoria="presenteaveis-placa-decorativa">Placa Decorativa</a></li>
                     </ul>
                 </li>
-
                 <li class="menu-item">
                     <a href="#" class="dropdown-toggle" onclick="toggleDropdown(event)">
                         <i class="fa-solid fa-film"></i> Cultura Pop
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Filmes</a></li>
-                        <li><a href="#">Animes</a></li>
-                        <li><a href="#">Séries</a></li>
-                        <li><a href="#">Mangás</a></li>
+                        <li><a href="#" data-subcategoria="cultura-pop-filmes">Filmes</a></li>
+                        <li><a href="#" data-subcategoria="cultura-pop-animes">Animes</a></li>
+                        <li><a href="#" data-subcategoria="cultura-pop-series">Séries</a></li>
+                        <li><a href="#" data-subcategoria="cultura-pop-mangas">Mangás</a></li>
                     </ul>
                 </li>
-
                 <li class="menu-item">
                     <a href="#" class="dropdown-toggle" onclick="toggleDropdown(event)">
                         <i class="fa-solid fa-shirt"></i> Moda Geek
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Camisetas</a></li>
-                        <li><a href="#">Bonés</a></li>
-
+                        <li><a href="#" data-subcategoria="moda-geek-camisetas">Camisetas</a></li>
+                        <li><a href="#" data-subcategoria="moda-geek-bones">Bonés</a></li>
                     </ul>
                 </li>
-
                 <li class="menu-item">
-                    <a href="#">
+                    <a href="#" data-subcategoria="ofertas">
                         <i class="fas fa-fire"></i> Ofertas
                     </a>
                 </li>
                 <li class="menu-item">
-                    <a href="#">
+                    <a href="#" data-subcategoria="novidades">
                         <i class="fas fa-star"></i> Novidades
                     </a>
                 </li>
@@ -108,7 +238,6 @@
         </nav>
 
         <main class="main-content" id="mainContent">
-                    
             <h1 style="text-align: center;">Produtos Geek:</h1>
             <button class="btn btn-primary mb-3 d-md-none" onclick="toggleSidebar()">
                 <i class="fas fa-filter"></i> Filtros
@@ -118,6 +247,36 @@
             </div>
         </main>
     </div>
+
+    
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modalProductImage" class="modal-product-image"></div>
+            <div class="modal-product-info">
+                <h2 id="modalProductTitle"></h2>
+                <p id="modalProductCategory"></p>
+                <p id="modalProductDescription"></p>
+                <button class="btn btn-warning" onclick="enviarWhatsApp(document.getElementById('modalProductTitle').textContent)">Comprar via WhatsApp</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="filterModal" class="filter-modal">
+        <div class="filter-modal-content">
+            <span class="close-filter" onclick="closeFilterModal()">&times;</span>
+            <h3>Filtrar Toy Art</h3>
+            <div class="filter-options">
+                <button class="filter-btn" onclick="filterProducts('toy-art')">Todos</button>
+                <button class="filter-btn" onclick="filterProducts('toy-art-star-wars')">Star Wars</button>
+                <button class="filter-btn" onclick="filterProducts('toy-art-herois')">Herois</button>
+                <button class="filter-btn" onclick="filterProducts('toy-art-desenhos')">Desenhos</button>
+                <button class="filter-btn" onclick="filterProducts('toy-art-filmes')">Filmes/Séries</button>
+                <button class="filter-btn" onclick="filterProducts('toy-art-harry-potter')">Harry Potter</button>
+            </div>
+        </div>
+    </div>
+
     <footer>
         <div class="WhatsLogoFixed">
             <a href="https://bit.ly/oicleo" target="_blank">
@@ -145,18 +304,8 @@
     </footer>
     <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"> // 
-        </script>
-    <script>
-        function enviarWhatsApp(produto) {
-            const numero = "5517991641770";
-            const mensagem = `Olá! Gostaria de saber mais sobre o produto: ${produto}.`;
-            const link = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
-            window.open(link, '_blank');
-        }
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous">
     </script>
-
-
 </body>
 
 </html>

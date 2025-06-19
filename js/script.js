@@ -23,13 +23,10 @@ function clickMenu() {
     }
 }
 
+
 const menu = document.querySelector("#menu");
 const header = document.querySelector("#nav");
 menu.addEventListener("click", () => header.classList.toggle("active"));
-
-function toggleMenu() {
-    document.getElementById('itens').classList.toggle('active');
-}
 
 
 function toggleSidebar() {
@@ -43,7 +40,6 @@ function toggleSidebar() {
         document.getElementById('mainContent').classList.toggle('with-sidebar');
     }
 }
-
 
 function toggleDropdown(event) {
     event.preventDefault();
@@ -61,6 +57,58 @@ function toggleDropdown(event) {
     dropdown.classList.toggle('show');
     toggle.classList.toggle('active');
 }
+
+// Modal de Filtros para Toy Art
+function openFilterModal(event) {
+    event.preventDefault();
+    event.stopPropagation();
+    document.getElementById('filterModal').style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+}
+
+function closeFilterModal() {
+    document.getElementById('filterModal').style.display = 'none';
+    document.body.style.overflow = 'auto';
+}
+
+window.addEventListener('click', function(event) {
+    const filterModal = document.getElementById('filterModal');
+    if (event.target === filterModal) {
+        closeFilterModal();
+    }
+});
+
+// Filtro de produtos
+function filterProducts(subcategoria) {
+    closeFilterModal();
+    
+    let produtosFiltrados = [];
+    switch(subcategoria) {
+        case 'toy-art':
+            produtosFiltrados = produtosToyArt;
+            break;
+        case 'toy-art-star-wars':
+            produtosFiltrados = produtosToyArt.filter(p => p.categoria === "Star Wars");
+            break;
+        case 'toy-art-herois':
+            produtosFiltrados = produtosToyArt.filter(p => p.categoria === "Herois");
+            break;
+        case 'toy-art-desenhos':
+            produtosFiltrados = produtosToyArt.filter(p => p.categoria === "Desenhos");
+            break;
+        case 'toy-art-filmes':
+            produtosFiltrados = produtosToyArt.filter(p => p.categoria === "Filmes/Séries");
+            break;
+        case 'toy-art-harry-potter':
+            produtosFiltrados = produtosToyArt.filter(p => p.categoria === "Harry Potter");
+            break;
+        default:
+            produtosFiltrados = produtosToyArt;
+    }
+    
+    exibirProdutos(produtosFiltrados);
+}
+
 
 document.addEventListener('click', function(event) {
     if (!event.target.matches('.dropdown-toggle') && !event.target.closest('.dropdown-menu')) {
@@ -85,35 +133,159 @@ function checkScreenSize() {
     }
 }
 
+function openModal(produto) {
+    const modal = document.getElementById('productModal');
+    const modalImg = document.getElementById('modalProductImage');
+    const modalTitle = document.getElementById('modalProductTitle');
+    const modalCategory = document.getElementById('modalProductCategory');
+    const modalDescription = document.getElementById('modalProductDescription');
+    
+    
+    let productData = [...produtosToyArt, ...produtosActionFiguresEstaticos, 
+                      ...produtosActionFiguresArticulados, ...produtosMiniColecionaveis]
+                     .find(p => p.nome === produto);
+    
+    if (productData) {
+        modalImg.style.backgroundImage = `url('${productData.imagem}')`;
+        modalTitle.textContent = productData.nome;
+        modalCategory.textContent = `Categoria: ${productData.categoria}`;
+        modalDescription.textContent = productData.descricao;
+        modal.style.display = 'block';
+        document.body.style.overflow = 'hidden';
+    }
+}
+
+function closeModal() {
+    document.getElementById('productModal').style.display = 'none';
+    document.body.style.overflow = 'auto';
+}
+
+
+window.addEventListener('click', function(event) {
+    const modal = document.getElementById('productModal');
+    if (event.target === modal) {
+        closeModal();
+    }
+});
 
 
 const produtosToyArt = [
-    { nome: "Funko Pop - Corazon", imagem: "imagens/funkpop/animes-desenhos/CAPIVARA FUNKO POP-10.jpg" },
-    { nome: "Funko Pop - Beetlejuice", imagem: "imagens/funkpop/animes-desenhos/CAPIVARA FUNKO POP-100.jpg" },
-    { nome: "Funko Pop - Felix", imagem: "imagens/funkpop/animes-desenhos/CAPIVARA FUNKO POP-102.jpg" },
-    { nome: "Funko Pop - Gomamon", imagem: "imagens/funkpop/animes-desenhos/CAPIVARA FUNKO POP-103.jpg" },
-    { nome: "Funko Pop - Patamon", imagem: "imagens/funkpop/animes-desenhos/CAPIVARA FUNKO POP-104.jpg" },
-    { nome: "Funko Pop - Yugi Muto", imagem: "imagens/funkpop/animes-desenhos/CAPIVARA FUNKO POP-109.jpg" },
-    { nome: "Funko Pop - Crabfeeder", imagem: "imagens/funkpop/animes-desenhos/CAPIVARA FUNKO POP-112.jpg" },
-    { nome: "Funko Pop - Liu Kang", imagem: "imagens/funkpop/animes-desenhos/CAPIVARA FUNKO POP-121.jpg" }
+    { 
+        nome: "Funko Pop - Corazon", 
+        imagem: "imagens/funkpop/animes-desenhos/CAPIVARA FUNKO POP-10.jpg",
+        categoria: "Animes",
+        descricao: "Funko Pop do personagem Corazon da série One Piece."
+    },
+    { 
+        nome: "Funko Pop - Beetlejuice", 
+        imagem: "imagens/funkpop/animes-desenhos/CAPIVARA FUNKO POP-100.jpg",
+        categoria: "Filmes",
+        descricao: "Funko Pop do personagem Beetlejuice do filme homônimo."
+    },
+    { 
+        nome: "Funko Pop - Felix", 
+        imagem: "imagens/funkpop/animes-desenhos/CAPIVARA FUNKO POP-102.jpg",
+        categoria: "Desenhos",
+        descricao: "Funko Pop do personagem Felix the Cat."
+    },
+     { 
+        nome: "Funko Pop - Darth Vader", 
+        imagem: "imagens/funkpop/star-wars/CAPIVARA FUNKO POP-11.jpg",
+        categoria: "Star Wars",
+        descricao: "Funko Pop do universo Star Wars."
+    },
+     { 
+        nome: "Funko Pop - Darth Maul", 
+        imagem: "imagens/funkpop/star-wars/CAPIVARA FUNKO POP-13.jpg",
+        categoria: "Star Wars",
+        descricao: "Funko Pop do universo Star Wars."
+    },
+    { 
+        nome: "Funko Pop - Ahsoka", 
+        imagem: "imagens/funkpop/star-wars/CAPIVARA FUNKO POP-14.jpg",
+        categoria: "Star Wars",
+        descricao: "Funko Pop do universo Star Wars."
+    },
+    { 
+        nome: "Funko Pop - stormtrooper", 
+        imagem: "imagens/funkpop/star-wars/CAPIVARA FUNKO POP-15.jpg",
+        categoria: "Star Wars",
+        descricao: "Funko Pop do universo Star Wars."
+    },
+    { 
+        nome: "Funko Pop - Luke Skywalker", 
+        imagem: "imagens/funkpop/star-wars/CAPIVARA FUNKO POP-16.jpg",
+        categoria: "Star Wars",
+        descricao: "Funko Pop do universo Star Wars."
+    },
+    { 
+        nome: "Funko Pop - Chewbacca", 
+        imagem: "imagens/funkpop/star-wars/CAPIVARA FUNKO POP-17.jpg",
+        categoria: "Star Wars",
+        descricao: "Funko Pop do universo Star Wars."
+    },
+    { 
+        nome: "Funko Pop - Mandaloriana com sabre de luz", 
+        imagem: "imagens/funkpop/star-wars/CAPIVARA FUNKO POP-18.jpg",
+        categoria: "Star Wars",
+        descricao: "Funko Pop do universo Star Wars."
+    },
+      { 
+        nome: "Funko Pop - Personagem com Baby Yoda", 
+        imagem: "imagens/funkpop/star-wars/CAPIVARA FUNKO POP-19.jpg",
+        categoria: "Star Wars",
+        descricao: "Funko Pop do universo Star Wars."
+    },
+      { 
+        nome: "Funko Pop - Anakin Skywalker", 
+        imagem: "imagens/funkpop/star-wars/CAPIVARA FUNKO POP-20.jpg",
+        categoria: "Star Wars",
+        descricao: "Funko Pop do universo Star Wars."
+    },
+    { 
+        nome: "Funko Pop - Baby Yoda (Grugo)", 
+        imagem: "imagens/funkpop/star-wars/CAPIVARA FUNKO POP-56.jpg",
+        categoria: "Star Wars",
+        descricao: "Funko Pop do universo Star Wars."
+    },
+    
+    { 
+        nome: "Funko Pop - Mandaloriano", 
+        imagem: "imagens/funkpop/star-wars/FIGURES_-10.jpg",
+        categoria: "Star Wars",
+        descricao: "Funko Pop do universo Star Wars."
+    }
+    
+    
+
+
 ];
 
 const produtosActionFiguresEstaticos = [
-    { nome: "Careca", imagem: "imagens/actionfigures/animes/FIGURES_-21.JPG" },
-    { nome: "Bangela", imagem: "imagens/actionfigures/filmes/FIGURES_.JPG" }
+    { 
+        nome: "Careca", 
+        imagem: "imagens/actionfigures/animes/FIGURES_-21.JPG",
+        categoria: "Animes",
+        descricao: "Action figure estático do personagem Careca."
+    },
+    { 
+        nome: "Bangela", 
+        imagem: "imagens/actionfigures/filmes/FIGURES_.JPG",
+        categoria: "Filmes",
+        descricao: "Action figure estático do personagem Bangela."
+    }
 ];
 
 const produtosActionFiguresArticulados = [
-     { nome: "Mina ali", imagem: "imagens/actionfigures-articulados/FIGURES_-56.JPG" },
+    { 
+        nome: "Mina ali", 
+        imagem: "imagens/actionfigures-articulados/FIGURES_-56.JPG",
+        categoria: "Filmes",
+        descricao: "Action figure articulado da personagem Mina Ali."
+    }
 ];
 
-const produtosMiniColecionaveis = [
-    
-];
-
-
-
-
+const produtosMiniColecionaveis = [];
 
 
 function exibirProdutos(produtos) {
@@ -129,9 +301,9 @@ function exibirProdutos(produtos) {
         const productCard = document.createElement('div');
         productCard.classList.add('product-card');
         productCard.innerHTML = `
-            <div class="product-image" style="background-image: url('${produto.imagem}')"></div>
+            <div class="product-image" style="background-image: url('${produto.imagem}')" onclick="openModal('${produto.nome}')"></div>
             <div class="product-info">
-                <h3 class="product-title">${produto.nome}</h3>
+                <h3 class="product-title" onclick="openModal('${produto.nome}')">${produto.nome}</h3>
                 <button class="btn btn-warning btn-sm" onclick="enviarWhatsApp('${produto.nome}')">Comprar</button>
             </div>
         `;
@@ -139,47 +311,29 @@ function exibirProdutos(produtos) {
     });
 }
 
-
 document.addEventListener('DOMContentLoaded', function() {
+    
+    const categorias = {
+        'action-figures-estaticos': produtosActionFiguresEstaticos,
+        'action-figures-articulados': produtosActionFiguresArticulados,
+        'mini-colecionaveis': produtosMiniColecionaveis
+    };
 
-    const colecionaveisToggle = document.querySelector('.menu-item:first-child .dropdown-toggle');
-    if (colecionaveisToggle) {
-        colecionaveisToggle.classList.add('active');
-        const dropdownMenu = colecionaveisToggle.nextElementSibling;
-        dropdownMenu.classList.add('show');
-    }
-
-
-
-    document.querySelectorAll('.dropdown-menu a').forEach(item => {
+    document.querySelectorAll('[data-subcategoria]').forEach(item => {
         item.addEventListener('click', (event) => {
             event.preventDefault();
             const subcategoria = item.getAttribute('data-subcategoria');
-            
-            switch(subcategoria) {
-                case 'toy-art':
-                    exibirProdutos(produtosToyArt);
-                    break;
-                case 'action-figures-estaticos':
-                    exibirProdutos(produtosActionFiguresEstaticos);
-                    break;
-                case 'action-figures-articulados':
-                    exibirProdutos(produtosActionFiguresArticulados);
-                    break;
-                case 'mini-colecionaveis':
-                    exibirProdutos(produtosMiniColecionaveis);
-                    break;
-                default:
-                    exibirProdutos(produtosToyArt); 
+            if (subcategoria !== 'toy-art') {
+                exibirProdutos(categorias[subcategoria] || produtosToyArt);
             }
         });
     });
-    
 
-    
+   
     exibirProdutos(produtosToyArt);
     checkScreenSize();
 });
+
 
 window.addEventListener('resize', function() {
     checkScreenSize();
