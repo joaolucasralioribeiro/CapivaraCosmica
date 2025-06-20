@@ -133,6 +133,7 @@ function checkScreenSize() {
     }
 }
 
+
 function openModal(produto) {
     const modal = document.getElementById('productModal');
     const modalImg = document.getElementById('modalProductImage');
@@ -188,6 +189,7 @@ const produtosToyArt = [
         categoria: "Desenhos",
         descricao: "Funko Pop do personagem Felix the Cat."
     },
+    //Star Wars
      { 
         nome: "Funko Pop - Darth Vader", 
         imagem: "imagens/funkpop/star-wars/CAPIVARA FUNKO POP-11.jpg",
@@ -254,7 +256,134 @@ const produtosToyArt = [
         imagem: "imagens/funkpop/star-wars/FIGURES_-10.jpg",
         categoria: "Star Wars",
         descricao: "Funko Pop do universo Star Wars."
-    }
+    },
+
+    //Herois
+    { 
+        nome: "Funko Pop - Homem Aranha", 
+        imagem: "imagens/funkpop/herois/CAPIVARA FUNKO POP-30.jpg",
+        categoria: "Herois",
+        descricao: "Funko Pop da Marvel."
+    },
+    { 
+        nome: "Funko Pop - Homem Aranha 2", 
+        imagem: "imagens/funkpop/herois/CAPIVARA FUNKO POP-31.jpg",
+        categoria: "Herois",
+        descricao: "Funko Pop da Marvel."
+    },
+    { 
+        nome: "Funko Pop - Venom", 
+        imagem: "imagens/funkpop/herois/CAPIVARA FUNKO POP-32.jpg",
+        categoria: "Herois",
+        descricao: "Funko Pop da Marvel."
+    },
+     { 
+        nome: "Funko Pop - Venom 2", 
+        imagem: "imagens/funkpop/herois/CAPIVARA FUNKO POP-33.jpg",
+        categoria: "Herois",
+        descricao: "Funko Pop da Marvel."
+    },
+     { 
+        nome: "Funko Pop - Rocket", 
+        imagem: "imagens/funkpop/herois/CAPIVARA FUNKO POP-34.jpg",
+        categoria: "Herois",
+        descricao: "Funko Pop da Marvel."
+    },
+     { 
+        nome: "Funko Pop - Sam Wilson(capitão)", 
+        imagem: "imagens/funkpop/herois/CAPIVARA FUNKO POP-35.jpg",
+        categoria: "Herois",
+        descricao: "Funko Pop da Marvel."
+    },
+     { 
+        nome: "Funko Pop - Baby Gru", 
+        imagem: "imagens/funkpop/herois/CAPIVARA FUNKO POP-36.jpg",
+        categoria: "Herois",
+        descricao: "Funko Pop da Marvel."
+    },
+     { 
+        nome: "Funko Pop - Baby Gru 2", 
+        imagem: "imagens/funkpop/herois/CAPIVARA FUNKO POP-37.jpg",
+        categoria: "Herois",
+        descricao: "Funko Pop da Marvel."
+    },
+     { 
+        nome: "Funko Pop - Baby Gru 3", 
+        imagem: "imagens/funkpop/herois/CAPIVARA FUNKO POP-38.jpg",
+        categoria: "Herois",
+        descricao: "Funko Pop da Marvel."
+    },
+     { 
+        nome: "Funko Pop - Doutor Estranho", 
+        imagem: "imagens/funkpop/herois/CAPIVARA FUNKO POP-39.jpg",
+        categoria: "Herois",
+        descricao: "Funko Pop da Marvel."
+    },
+     { 
+        nome: "Funko Pop - Wolverine", 
+        imagem: "imagens/funkpop/herois/CAPIVARA FUNKO POP-40.jpg",
+        categoria: "Herois",
+        descricao: "Funko Pop da Marvel."
+    },
+     { 
+        nome: "Funko Pop - Homem de Ferro", 
+        imagem: "imagens/funkpop/herois/CAPIVARA FUNKO POP-41.jpg",
+        categoria: "Herois",
+        descricao: "Funko Pop da Marvel."
+    },
+
+     { 
+        nome: "Funko Pop - Batman", 
+        imagem: "imagens/funkpop/herois/CAPIVARA FUNKO POP-81.jpg",
+        categoria: "Herois",
+        descricao: "Funko Pop da DC."
+    },
+    { 
+        nome: "Funko Pop - Tubarão Rei", 
+        imagem: "imagens/funkpop/herois/CAPIVARA FUNKO POP-82.jpg",
+        categoria: "Herois",
+        descricao: "Funko Pop da DC."
+    },
+    { 
+        nome: "Funko Pop - Mulher Maravilha", 
+        imagem: "imagens/funkpop/herois/CAPIVARA FUNKO POP-83.jpg",
+        categoria: "Herois",
+        descricao: "Funko Pop da DC."
+    },
+
+    { 
+        nome: "Funko Pop - Superman", 
+        imagem: "imagens/funkpop/herois/CAPIVARA FUNKO POP-151.jpg",
+        categoria: "Herois",
+        descricao: "Funko Pop da DC."
+    },
+    { 
+        nome: "Funko Pop - Superman 2", 
+        imagem: "imagens/funkpop/herois/FIGURES_-16.jpg",
+        categoria: "Herois",
+        descricao: "Funko Pop da DC."
+    },
+
+    //Harry Potter
+     { 
+        nome: "Funko Pop - Harry Potter", 
+        imagem: "imagens/funkpop/harry-potter/CAPIVARA FUNKO POP-140.jpg",
+        categoria: "Harry Potter",
+        descricao: "Funko Pop do universo de Harry Potter."
+    },
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
 
@@ -285,7 +414,9 @@ const produtosActionFiguresArticulados = [
     }
 ];
 
-const produtosMiniColecionaveis = [];
+const produtosMiniColecionaveis = [
+
+];
 
 
 function exibirProdutos(produtos) {
