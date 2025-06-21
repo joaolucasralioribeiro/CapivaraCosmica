@@ -23,11 +23,9 @@ function clickMenu() {
     }
 }
 
-
 const menu = document.querySelector("#menu");
 const header = document.querySelector("#nav");
 menu.addEventListener("click", () => header.classList.toggle("active"));
-
 
 function toggleSidebar() {
     const sidebar = document.getElementById('sidebar');
@@ -102,13 +100,47 @@ function filterProducts(subcategoria) {
         case 'toy-art-harry-potter':
             produtosFiltrados = produtosToyArt.filter(p => p.categoria === "Harry Potter");
             break;
+        case 'presenteaveis-bolsa':
+            produtosFiltrados = produtosPresenteaveis.filter(p => p.categoria === "Bolsa");
+            break;
+        case 'presenteaveis-carteira':
+            produtosFiltrados = produtosPresenteaveis.filter(p => p.categoria === "Carteira");
+            break;
+        case 'presenteaveis-caneca':
+            produtosFiltrados = produtosPresenteaveis.filter(p => p.categoria === "Caneca");
+            break;
+        case 'presenteaveis-porta-copo':
+            produtosFiltrados = produtosPresenteaveis.filter(p => p.categoria === "Porta Copo");
+            break;
+        case 'presenteaveis-tapete':
+            produtosFiltrados = produtosPresenteaveis.filter(p => p.categoria === "Tapete");
+            break;
+        case 'presenteaveis-guarrafa':
+            produtosFiltrados = produtosPresenteaveis.filter(p => p.categoria === "Guarrafa");
+            break;
+        case 'presenteaveis-placa-decorativa':
+            produtosFiltrados = produtosPresenteaveis.filter(p => p.categoria === "Placa Decorativa");
+            break;
+        case 'moda-geek-camisetas':
+            produtosFiltrados = produtosModaGeek.filter(p => p.categoria === "Camisetas");
+            break;
+        case 'moda-geek-bones':
+            produtosFiltrados = produtosModaGeek.filter(p => p.categoria === "Bonés");
+            break;
+        case 'ofertas':
+            produtosFiltrados = [...produtosToyArt, ...produtosActionFigures, ...produtosMiniColecionaveis, ...produtosPresenteaveis, ...produtosModaGeek]
+                              .filter(p => p.oferta === true);
+            break;
+        case 'novidades':
+            produtosFiltrados = [...produtosToyArt, ...produtosActionFigures, ...produtosMiniColecionaveis, ...produtosPresenteaveis, ...produtosModaGeek]
+                              .filter(p => p.novo === true);
+            break;
         default:
-            produtosFiltrados = produtosToyArt;
+            produtosFiltrados = [...produtosToyArt, ...produtosActionFigures, ...produtosMiniColecionaveis, ...produtosPresenteaveis, ...produtosModaGeek];
     }
     
     exibirProdutos(produtosFiltrados);
 }
-
 
 document.addEventListener('click', function(event) {
     if (!event.target.matches('.dropdown-toggle') && !event.target.closest('.dropdown-menu')) {
@@ -118,7 +150,6 @@ document.addEventListener('click', function(event) {
         });
     }
 });
-
 
 function checkScreenSize() {
     const sidebar = document.getElementById('sidebar');
@@ -133,7 +164,6 @@ function checkScreenSize() {
     }
 }
 
-
 function openModal(produto) {
     const modal = document.getElementById('productModal');
     const modalImg = document.getElementById('modalProductImage');
@@ -141,9 +171,9 @@ function openModal(produto) {
     const modalCategory = document.getElementById('modalProductCategory');
     const modalDescription = document.getElementById('modalProductDescription');
     
-    
     let productData = [...produtosToyArt, ...produtosActionFiguresEstaticos, 
-                      ...produtosActionFiguresArticulados, ...produtosMiniColecionaveis]
+                      ...produtosActionFiguresArticulados, ...produtosMiniColecionaveis,
+                      ...produtosPresenteaveis, ...produtosModaGeek]
                      .find(p => p.nome === produto);
     
     if (productData) {
@@ -161,7 +191,6 @@ function closeModal() {
     document.body.style.overflow = 'auto';
 }
 
-
 window.addEventListener('click', function(event) {
     const modal = document.getElementById('productModal');
     if (event.target === modal) {
@@ -177,17 +206,98 @@ const produtosToyArt = [
         categoria: "Animes",
         descricao: "Funko Pop do personagem Corazon da série One Piece."
     },
-    { 
-        nome: "Funko Pop - Beetlejuice", 
-        imagem: "imagens/funkpop/animes-desenhos/CAPIVARA FUNKO POP-100.jpg",
-        categoria: "Filmes",
-        descricao: "Funko Pop do personagem Beetlejuice do filme homônimo."
+    //Filmes  - Séries
+
+     { 
+        nome: "Funko Pop - Optimus Prime", 
+        imagem: "imagens/funkpop/filmes-series/CAPIVARA FUNKO POP-84.jpg",
+        categoria: "Filmes/Séries",
+        descricao: "Funko Pop do universo de Transformers."
+    },
+     { 
+        nome: "Funko Pop - Megatron", 
+        imagem: "imagens/funkpop/filmes-series/CAPIVARA FUNKO POP-85.jpg",
+        categoria: "Filmes/Séries",
+        descricao: "Funko Pop do universo de Transformers."
     },
     { 
-        nome: "Funko Pop - Felix", 
-        imagem: "imagens/funkpop/animes-desenhos/CAPIVARA FUNKO POP-102.jpg",
+        nome: "Funko Pop - Bumblebee", 
+        imagem: "imagens/funkpop/filmes-series/CAPIVARA FUNKO POP-86.jpg",
+        categoria: "Filmes/Séries",
+        descricao: "Funko Pop do universo de Transformers."
+    },
+    
+     { 
+        nome: "Funko Pop - Boneco Barbie", 
+        imagem: "imagens/funkpop/filmes-series/CAPIVARA FUNKO POP-93.jpg",
+        categoria: "Filmes/Séries",
+        descricao: "Funko Pop do universo de Barbie."
+    },
+     { 
+        nome: "Funko Pop - Wandinha", 
+        imagem: "imagens/funkpop/filmes-series/CAPIVARA FUNKO POP-97.jpg",
+        categoria: "Filmes/Séries",
+        descricao: "Funko Pop da série Wednesday."
+    },
+     { 
+        nome: "Funko Pop -  Daemon Targaryen", 
+        imagem: "imagens/funkpop/filmes-series/CAPIVARA FUNKO POP-111.jpg",
+        categoria: "Filmes/Séries",
+        descricao: "Funko Pop da série House of the Dragon."
+    },
+     { 
+        nome: "Funko Pop - Eddie Munson", 
+        imagem: "imagens/funkpop/filmes-series/CAPIVARA FUNKO POP-115.jpg",
+        categoria: "Filmes/Séries",
+        descricao: "Funko Pop da série Stranger Things."
+    },
+     { 
+        nome: "Funko Pop - Maui", 
+        imagem: "imagens/funkpop/filmes-series/CAPIVARA FUNKO POP-130.jpg",
+        categoria: "Filmes/Séries",
+        descricao: "Funko Pop do filme Moana da Disney."
+    },
+     
+      
+      { 
+        nome: "Funko Pop -  Eleven", 
+        imagem: "imagens/funkpop/filmes-series/FIGURES_-55.jpg",
+        categoria: "Filmes/Séries",
+        descricao: "Funko Pop da série Stranger Things."
+    },
+      { 
+        nome: "Funko Pop - Daenerys Targaryen e Drogon", 
+        imagem: "imagens/funkpop/filmes-series/CAPIVARA FUNKO POP-153.jpg",
+        categoria: "Filmes/Séries",
+        descricao: "Funko Pop da série Game of Thrones."
+    },
+      { 
+        nome: "Funko Pop - Freddy Fazbear", 
+        imagem: "imagens/funkpop/filmes-series/FIGURES_-3.jpg",
+        categoria: "Filmes/Séries",
+        descricao: "Funko Pop do jogo Five Nights at Freddy's."
+    },
+      { 
+        nome: "Funko Pop -  Rocky Balboa", 
+        imagem: "imagens/funkpop/filmes-series/FIGURES_-6.jpg",
+        categoria: "Filmes/Séries",
+        descricao: "Funko Pop do filme Rocky."
+    },
+      { 
+        nome: "Funko Pop -  Frodo", 
+        imagem: "imagens/funkpop/filmes-series/CAPIVARA FUNKO POP-118.jpg",
+        categoria: "Filmes/Séries",
+        descricao: "Funko Pop do filme Senhor dos Anéis."
+    },
+    
+    
+
+    //Animes - Desenhos
+    { 
+        nome: "Funko Pop - Vegetta", 
+        imagem: "imagens/funkpop/animes-desenhos/FIGURES_-9.jpg",
         categoria: "Desenhos",
-        descricao: "Funko Pop do personagem Felix the Cat."
+        descricao: "Funko Pop do universo de Dragon Ball."
     },
     //Star Wars
      { 
@@ -371,32 +481,102 @@ const produtosToyArt = [
         categoria: "Harry Potter",
         descricao: "Funko Pop do universo de Harry Potter."
     },
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
+    { 
+        nome: "Funko Pop - Hermione", 
+        imagem: "imagens/funkpop/harry-potter/CAPIVARA FUNKO POP-141.jpg",
+        categoria: "Harry Potter",
+        descricao: "Funko Pop do universo de Harry Potter."
+    },
+     { 
+        nome: "Funko Pop - O Trio", 
+        imagem: "imagens/funkpop/harry-potter/CAPIVARA FUNKO POP-142.jpg",
+        categoria: "Harry Potter",
+        descricao: "Funko Pop do universo de Harry Potter."
+    },
+     { 
+        nome: "Funko Pop - Hogwarts Express", 
+        imagem: "imagens/funkpop/harry-potter/CAPIVARA FUNKO POP-137.jpg",
+        categoria: "Harry Potter",
+        descricao: "Funko Pop do universo de Harry Potter."
+    },
+     
 
 ];
 
 const produtosActionFiguresEstaticos = [
     { 
-        nome: "Careca", 
+        nome: "Son Goku Super Saiyajin ", 
+        imagem: "imagens/actionfigures/animes/FIGURES_-41.JPG",
+        categoria: "Animes",
+        descricao: "Action figure estático do anime Dragon Ball"
+    },
+     { 
+        nome: "Freeza", 
+        imagem: "imagens/actionfigures/animes/FIGURES_-43.JPG",
+        categoria: "Animes",
+        descricao: "Action figure estático do anime Dragon Ball"
+    },
+    { 
+        nome: "Naruto Uzumaki", 
+        imagem: "imagens/actionfigures/animes/FIGURES_-25.JPG",
+        categoria: "Animes",
+        descricao: "Action figure estático do anime Naruto."
+    },
+     { 
+        nome: "Sasuke Uchiha (", 
+        imagem: "imagens/actionfigures/animes/FIGURES_-23.JPG",
+        categoria: "Animes",
+        descricao: "Action figure estático do anime Naruto."
+    },
+     { 
+        nome: "Saitama", 
         imagem: "imagens/actionfigures/animes/FIGURES_-21.JPG",
         categoria: "Animes",
-        descricao: "Action figure estático do personagem Careca."
+        descricao: "Action figure estático do anime One-Punch Man."
     },
+    { 
+        nome: "Roronoa Zoro", 
+        imagem: "imagens/actionfigures/animes/FIGURES_-29.JPG",
+        categoria: "Animes",
+        descricao: "Action figure estático do anime One Piece."
+    },
+    { 
+        nome: "Naruto Uzumaki (Modo Sábio dos Seis Caminhos)", 
+        imagem: "imagens/actionfigures/animes/FIGURES_-27.JPG",
+        categoria: "Animes",
+        descricao: "Action figure estático do anime Naruto."
+    },
+    { 
+        nome: "Monkey D. Luffy ", 
+        imagem: "imagens/actionfigures/animes/FIGURES_-33.JPG",
+        categoria: "Animes",
+        descricao: "Action figure estático do anime One Piece."
+    },
+    { 
+        nome: "Izuku Midoriya", 
+        imagem: "imagens/actionfigures/animes/FIGURES_-39.JPG",
+        categoria: "Animes",
+        descricao: "Action figure estático do anime Deku - My Hero Academia"
+    },
+    { 
+        nome: " Katsuki Bakugo", 
+        imagem: "imagens/actionfigures/animes/FIGURES_-37.JPG",
+        categoria: "Animes",
+        descricao: "Action figure estático do anime Deku - My Hero Academia"
+    },
+    { 
+        nome: "Endeavor  ", 
+        imagem: "imagens/actionfigures/animes/FIGURES_-45.JPG",
+        categoria: "Animes",
+        descricao: "Action figure estático do anime  My Hero Academia."
+    },
+    { 
+        nome: "Evangelion Unidade-01", 
+        imagem: "imagens/actionfigures/animes/FIGURES_-35.JPG",
+        categoria: "Animes",
+        descricao: "Action figure estático da série Neon Genesis Evangelion"
+    },
+   
     { 
         nome: "Bangela", 
         imagem: "imagens/actionfigures/filmes/FIGURES_.JPG",
@@ -418,6 +598,79 @@ const produtosMiniColecionaveis = [
 
 ];
 
+
+const produtosPresenteaveis = [
+    { 
+        nome: "Bolsa Star Wars", 
+        imagem: "imagens/presenteaveis/bolsa-star-wars.jpg",
+        categoria: "Bolsa",
+        descricao: "Bolsa temática de Star Wars, material resistente"
+    },
+    { 
+        nome: "Carteira Marvel", 
+        imagem: "imagens/presenteaveis/carteira-marvel.jpg",
+        categoria: "Carteira",
+        descricao: "Carteira com estampa dos Vingadores, múltiplos compartimentos"
+    },
+    { 
+        nome: "Caneca Harry Potter", 
+        imagem: "imagens/presenteaveis/caneca-harry-potter.jpg",
+        categoria: "Caneca",
+        descricao: "Caneca temática de Harry Potter, muda de cor com líquido quente"
+    },
+    { 
+        nome: "Porta Copos Game of Thrones", 
+        imagem: "imagens/presenteaveis/porta-copos-got.jpg",
+        categoria: "Porta Copo",
+        descricao: "Set de 6 porta copos com brasões das casas de Game of Thrones"
+    },
+    { 
+        nome: "Tapete Mario Bros", 
+        imagem: "imagens/presenteaveis/tapete-mario.jpg",
+        categoria: "Tapete",
+        descricao: "Tapete infantil com tema do Mario, antiderrapante"
+    },
+    { 
+        nome: "Garrafa Termica Avengers", 
+        imagem: "imagens/presenteaveis/garrafa-avengers.jpg",
+        categoria: "Guarrafa",
+        descricao: "Garrafa térmica dos Vingadores, mantém temperatura por 24h"
+    },
+    { 
+        nome: "Placa Decorativa Star Wars", 
+        imagem: "imagens/presenteaveis/placa-star-wars.jpg",
+        categoria: "Placa Decorativa",
+        descricao: "Placa de metal com frase icônica de Star Wars"
+    }
+];
+
+
+const produtosModaGeek = [
+    { 
+        nome: "Camiseta Homem-Aranha", 
+        imagem: "imagens/moda-geek/camiseta-homem-aranha.jpg",
+        categoria: "Camisetas",
+        descricao: "Camiseta 100% algodão com estampa do Homem-Aranha"
+    },
+    { 
+        nome: "Camiseta Star Wars", 
+        imagem: "imagens/moda-geek/camiseta-star-wars.jpg",
+        categoria: "Camisetas",
+        descricao: "Camiseta básica com logo de Star Wars"
+    },
+    { 
+        nome: "Boné Marvel", 
+        imagem: "imagens/moda-geek/bone-marvel.jpg",
+        categoria: "Bonés",
+        descricao: "Boné ajustável com logo da Marvel"
+    },
+    { 
+        nome: "Boné Nintendo", 
+        imagem: "imagens/moda-geek/bone-nintendo.jpg",
+        categoria: "Bonés",
+        descricao: "Boné clássico com logo da Nintendo"
+    }
+];
 
 function exibirProdutos(produtos) {
     const produtosGrid = document.querySelector('.products-grid');
@@ -443,34 +696,39 @@ function exibirProdutos(produtos) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    
     const categorias = {
         'action-figures-estaticos': produtosActionFiguresEstaticos,
         'action-figures-articulados': produtosActionFiguresArticulados,
-        'mini-colecionaveis': produtosMiniColecionaveis
+        'mini-colecionaveis': produtosMiniColecionaveis,
+        'presenteaveis-bolsa': produtosPresenteaveis.filter(p => p.categoria === "Bolsa"),
+        'presenteaveis-carteira': produtosPresenteaveis.filter(p => p.categoria === "Carteira"),
+        'presenteaveis-caneca': produtosPresenteaveis.filter(p => p.categoria === "Caneca"),
+        'presenteaveis-porta-copo': produtosPresenteaveis.filter(p => p.categoria === "Porta Copo"),
+        'presenteaveis-tapete': produtosPresenteaveis.filter(p => p.categoria === "Tapete"),
+        'presenteaveis-guarrafa': produtosPresenteaveis.filter(p => p.categoria === "Guarrafa"),
+        'presenteaveis-placa-decorativa': produtosPresenteaveis.filter(p => p.categoria === "Placa Decorativa"),
+        'moda-geek-camisetas': produtosModaGeek.filter(p => p.categoria === "Camisetas"),
+        'moda-geek-bones': produtosModaGeek.filter(p => p.categoria === "Bonés"),
+        'ofertas': [...produtosToyArt, ...produtosActionFiguresEstaticos, ...produtosActionFiguresArticulados, ...produtosMiniColecionaveis, ...produtosPresenteaveis, ...produtosModaGeek].filter(p => p.oferta),
+        'novidades': [...produtosToyArt, ...produtosActionFiguresEstaticos, ...produtosActionFiguresArticulados, ...produtosMiniColecionaveis, ...produtosPresenteaveis, ...produtosModaGeek].filter(p => p.novo)
     };
 
     document.querySelectorAll('[data-subcategoria]').forEach(item => {
         item.addEventListener('click', (event) => {
             event.preventDefault();
             const subcategoria = item.getAttribute('data-subcategoria');
-            if (subcategoria !== 'toy-art') {
-                exibirProdutos(categorias[subcategoria] || produtosToyArt);
-            }
+            exibirProdutos(categorias[subcategoria] || [...produtosToyArt, ...produtosActionFiguresEstaticos, ...produtosActionFiguresArticulados, ...produtosMiniColecionaveis, ...produtosPresenteaveis, ...produtosModaGeek]);
         });
     });
 
-   
-    exibirProdutos(produtosToyArt);
+    exibirProdutos([...produtosToyArt, ...produtosActionFiguresEstaticos, ...produtosActionFiguresArticulados, ...produtosMiniColecionaveis, ...produtosPresenteaveis, ...produtosModaGeek]);
     checkScreenSize();
 });
-
 
 window.addEventListener('resize', function() {
     checkScreenSize();
     mudouTamanho();
 });
-
 
 function enviarWhatsApp(produto) {
     const numero = "5517991641770";
@@ -478,3 +736,26 @@ function enviarWhatsApp(produto) {
     const link = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
     window.open(link, '_blank');
 }
+
+
+
+// Botão de voltar ao topo
+window.onscroll = function() {
+    scrollFunction();
+};
+
+function scrollFunction() {
+    const backToTopBtn = document.getElementById("backToTopBtn");
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        backToTopBtn.style.display = "block";
+    } else {
+        backToTopBtn.style.display = "none";
+    }
+}
+
+document.getElementById("backToTopBtn").addEventListener("click", function() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});

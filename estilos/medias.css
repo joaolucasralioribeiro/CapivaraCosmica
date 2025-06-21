@@ -278,3 +278,26 @@
                 grid-template-columns: 1fr;
             }
         }
+        
+@media (max-width: 768px) {
+    .modal-content {
+        width: 90%;
+        padding: 20px;
+    }
+    
+    .modal-product-image,
+    .modal-product-info {
+        width: 100%;
+        float: none;
+    }
+    
+    .modal-product-image {
+        height: 250px;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    
+    #modalProductTitle {
+        font-size: 1.5rem;
+    }
+}
