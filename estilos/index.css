@@ -1,110 +1,111 @@
-
 main {
-    background: center / cover no-repeat white;
+  background: center / cover no-repeat white;
 }
 
-    /* Config para ajustar o carrossel em telas maiores */
+/* Config para ajustar o carrossel em telas maiores */
 .d-block {
-    max-height: 80vh;
-    object-fit: contain;
+  max-height: 80vh;
+  object-fit: contain;
 }
 #goku {
-    background: url(../imagens/Goku-paisagem.jpeg) no-repeat;
-    background-size: cover;
-    backdrop-filter: blur(1px); 
+  background: url(../imagens/Goku-paisagem.jpeg) no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(1px);
 }
 #f1 {
-    background: url(../imagens/F1\ -\ perfil.jpeg) no-repeat;
-    background-size: cover;
-    backdrop-filter: blur(1px); 
+  background: url(../imagens/F1\ -\ perfil.jpeg) no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(1px);
 }
 #got {
-    background: url(../imagens/Game-thrones-perfil.jpeg) no-repeat;
-    background-size: cover;
-    backdrop-filter: blur(1px); 
+  background: url(../imagens/Game-thrones-perfil.jpeg) no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(1px);
 }
-    /* Config dos exemplos de produtos no index */
+/* Config dos exemplos de produtos no index */
 aside.cards-prod {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 2em;
-    margin-bottom: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 aside.cards-prod h1 {
-    padding: 10px;
+  padding: 10px;
 }
 
 #carouselExampleCaptions {
-    max-width: 287.5px;
+  max-width: 287.5px;
 }
 
 div.exemplos {
-    display: none;
+  display: none;
 }
 
 #eleven-perf {
-    max-width: 300px;
-    height: 70vh;
+  max-width: 300px;
+  height: 70vh;
 }
 
 #goku-perf {
-    max-width: 300px;
-    height: 70vh;
+  max-width: 300px;
+  height: 70vh;
 }
 
 #tanj-perf {
-    max-width: 300px;
-    min-height: 70vh;
-    object-fit: cover;
+  max-width: 300px;
+  min-height: 70vh;
+  object-fit: cover;
 }
 
 #eleven-fren {
-    max-width: 300px;
-    height: 70vh;
+  max-width: 300px;
+  height: 70vh;
 }
 
 #goku-fren {
-    max-width: 300px;
-    height: 70vh;
+  max-width: 300px;
+  height: 70vh;
 }
 
 #tanj-fren {
-    max-width: 300px;
-    min-height: 70vh;
-    object-fit: cover;
+  max-width: 300px;
+  min-height: 70vh;
+  object-fit: cover;
 }
 
 div.prod {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  text-align: center;
+  margin: 10px;
+}
 
-    border-radius: 1em;
-    overflow: hidden;
-    text-align: center;
-
-    margin: 10px;
-    color: white;
-    background-color: #24426A;
-    box-shadow: 0px 0px 5px black;
+div.prod:hover {
+  box-shadow: 3px;
+  transform: scale(1.04);
+  transition: ease 0.5s;
 }
 
 p.desc {
-    background-color: #24426A;
-    color: white;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 300px;
-    white-space: nowrap;
-    font-weight: bold;
-    margin: 0;
-    padding: 10px;
+  color: rgb(10, 10, 10);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 300px;
+  white-space: nowrap;
+  font-weight: bold;
+  margin: 0;
+  padding: 10px;
+  justify-self: center;
+  align-self: center;
 }
 
 img.imgprod {
-    width: 100%;
-    object-fit: cover;
-    height: 60vh;
+  width: 100%;
+  object-fit: cover;
+  height: 60vh;
+  border-radius: 1em;
 }
