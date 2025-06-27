@@ -173,7 +173,7 @@ header {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    transform: translateZ(0); /* Forçar aceleração de hardware */
+    transform: translateZ(0); 
 }
 
 .product-info {

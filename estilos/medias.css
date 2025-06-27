@@ -71,64 +71,77 @@
 
 /*códigos relacionados ao arquivo produtos.css*/
 
+/* ============ Media Queries para Desktop (992px+) ============ */
 @media (min-width: 992px) {
   .d-md-none {
     display: none !important;
   }
+
+  .bloco1 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1100px;
+    gap: 10%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .textoApresentacao {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 408px;
+    box-sizing: border-box;
+    justify-content: center;
+  }
+  
+  .imagemLoja {
+    justify-content: right;
+  }
+  
+  .bloco2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1100px;
+    gap: 10%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .mapaLoja {
+    justify-content: right;
+  }
+  
+  .textoEspaco {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 408px;
+    box-sizing: border-box;
+    justify-content: center;
+  }
+  
+  .sidebar.active .sidebar-close-btn {
+    display: block;
+  }
 }
-@media (min-width: 993px) and (max-width: 750px) {
+
+/* ============ Media Query Problemática (Corrigida com lógica original) ============ */
+@media (min-width: 993px) {
   .sidebar {
     transform: translateX(0);
   }
+  
   .sidebar-close-btn {
     display: none !important;
   }
-  .main-content.with-sidebar {
-    margin-left: 250px;
-  }
 }
 
-@media (max-width: 768px) {
-  .product-image {
-    height: 150px;
-    background-size: contain;
-  }
-
-  .products-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-  }
-
-  .product-card {
-    margin-bottom: 10px;
-  }
-
-  .product-image {
-    content-visibility: auto;
-    will-change: transform;
-    backface-visibility: hidden;
-  }
-
-  .overlay {
-    top: 15vh;
-    height: calc(100vh - 15vh);
-  }
-
-  .modal-content {
-    flex-direction: column;
-  }
-
-  .modal-product-image,
-  .modal-product-info {
-    width: 100% !important;
-  }
-
-  .modal-product-image {
-    height: 200px;
-    margin-bottom: 20px;
-  }
-}
-
+/* ============ Media Queries para Tablets (770px-991px) ============ */
 @media screen and (min-width: 770px) {
   header {
     display: flex;
@@ -136,19 +149,23 @@
     height: 12vh;
     align-items: center;
   }
+  
   span#menu {
     display: none;
   }
+  
   img#logo {
     height: 100%;
     max-height: 100px;
     min-height: 60px;
     object-fit: contain;
   }
+  
   menu#itens {
     display: block !important;
     height: 100%;
   }
+  
   menu > ul {
     position: relative;
     display: flex;
@@ -162,11 +179,13 @@
     margin: 0px;
     gap: 2em;
   }
+  
   menu > ul li {
     height: 100%;
     display: flex;
     align-items: center;
   }
+  
   menu > ul li a {
     padding: 0 10px;
     height: 100%;
@@ -178,110 +197,78 @@
   }
 }
 
+
 @media (max-width: 768px) {
-  .products-grid {
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 15px;
-  }
   .product-image {
     height: 150px;
+    background-size: contain;
+    content-visibility: auto;
+    will-change: transform;
+    backface-visibility: hidden;
   }
-}
 
-@media (min-width: 992px) {
-  .bloco1 {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    max-width: 1100px;
-    gap: 10%;
-    align-items: center;
-    justify-content: center;
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
   }
-  .textoApresentacao {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    height: 400px;
-    width: 408px;
-    box-sizing: border-box;
-    justify-content: center;
-  }
-  .imagemLoja {
-    justify-content: right;
-  }
-  .bloco2 {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    max-width: 1100px;
-    gap: 10%;
-    align-items: center;
-    justify-content: center;
-  }
-  .mapaLoja {
-    justify-content: right;
-  }
-  .textoEspaco {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    height: 400px;
-    width: 408px;
-    box-sizing: border-box;
-    justify-content: center;
-  }
-  .sidebar.active .sidebar-close-btn {
-    display: block;
-  }
-}
-@media (min-width: 993px) {
-  .sidebar {
-    transform: translateX(0);
-  }
-  .sidebar-close-btn {
-    display: none !important;
-  }
-}
 
-@media (max-width: 768px) {
+  .product-card {
+    margin-bottom: 10px;
+  }
+
+  .overlay {
+    top: 15vh;
+    height: calc(100vh - 15vh);
+  }
+
   .modal-content {
     flex-direction: column;
-  }
-
-  .modal-product-image,
-  .modal-product-info {
-    width: 100%;
-  }
-
-  .modal-product-image {
-    height: 300px;
-  }
-
-  .filter-options {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 768px) {
-  .modal-content {
     width: 90%;
     padding: 20px;
   }
 
   .modal-product-image,
   .modal-product-info {
-    width: 100%;
+    width: 100% !important;
     float: none;
   }
 
   .modal-product-image {
-    height: 250px;
-    margin-right: 0;
+    height: 200px;
     margin-bottom: 20px;
+    margin-right: 0;
   }
 
   #modalProductTitle {
     font-size: 1.5rem;
+  }
+
+  .filter-options {
+    grid-template-columns: 1fr;
+  }
+  
+ 
+  .products-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+  }
+  
+  .product-image {
+    height: 150px;
+  }
+}
+
+
+@media (min-width: 993px) and (max-width: 750px) {
+  .sidebar {
+    transform: translateX(0);
+  }
+  
+  .sidebar-close-btn {
+    display: none !important;
+  }
+  
+  .main-content.with-sidebar {
+    margin-left: 250px;
   }
 }

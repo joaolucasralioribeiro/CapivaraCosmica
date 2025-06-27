@@ -587,10 +587,10 @@ const produtosActionFiguresEstaticos = [
 
 const produtosActionFiguresArticulados = [
     { 
-        nome: "Mina ali", 
+        nome: "Gigi", 
         imagem: "imagens/actionfigures-articulados/FIGURES_-56.JPG",
         categoria: "Filmes",
-        descricao: "Action figure articulado da personagem Mina Ali."
+        descricao: "Action figure articulado da personagem Gigi."
     }
 ];
 
@@ -731,12 +731,11 @@ window.addEventListener('resize', function() {
 });
 
 function enviarWhatsApp(produto) {
-    const numero = "5517991641770";
+    const numero = "5517981919993"; 
     const mensagem = `Olá! Gostaria de saber mais sobre o produto: ${produto}.`;
     const link = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
     window.open(link, '_blank');
 }
-
 
 
 // Botão de voltar ao topo
