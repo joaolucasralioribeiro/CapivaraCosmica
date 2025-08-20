@@ -1,400 +1,393 @@
 {
   "produtosToyArt": [
-    { 
-      "nome": "Funko Pop - Corazon", 
-      "imagem": "imagens/funkpop/animes-desenhos/CAPIVARA FUNKO POP-10.jpg",
+    {
+      "nome": "Funko Pop - Corazon",
+      "imagem": "imagens/funkpop/animes-desenhos/CAPIVARA FUNKO POP-10.webp",
       "categoria": "Desenhos",
       "descricao": "Funko Pop do personagem Corazon da série One Piece."
     },
-    { 
-      "nome": "Funko Pop - Optimus Prime", 
-      "imagem": "imagens/funkpop/filmes-series/CAPIVARA FUNKO POP-84.jpg",
+    {
+      "nome": "Funko Pop - Optimus Prime",
+      "imagem": "imagens/funkpop/filmes-series/CAPIVARA FUNKO POP-84.webp",
       "categoria": "Filmes/Séries",
       "descricao": "Funko Pop do universo de Transformers."
     },
-    { 
-        "nome": "Funko Pop - Megatron", 
-        "imagem": "imagens/funkpop/filmes-series/CAPIVARA FUNKO POP-85.jpg",
-        "categoria": "Filmes/Séries",
-        "descricao": "Funko Pop do universo de Transformers."
+    {
+      "nome": "Funko Pop - Megatron",
+      "imagem": "imagens/funkpop/filmes-series/CAPIVARA FUNKO POP-85.webp",
+      "categoria": "Filmes/Séries",
+      "descricao": "Funko Pop do universo de Transformers."
     },
-      { 
-        "nome": "Funko Pop - Bumblebee", 
-        "imagem": "imagens/funkpop/filmes-series/CAPIVARA FUNKO POP-86.jpg",
-        "categoria": "Filmes/Séries",
-        "descricao": "Funko Pop do universo de Transformers."
+    {
+      "nome": "Funko Pop - Bumblebee",
+      "imagem": "imagens/funkpop/filmes-series/CAPIVARA FUNKO POP-86.webp",
+      "categoria": "Filmes/Séries",
+      "descricao": "Funko Pop do universo de Transformers."
     },
-    
-     { 
-        "nome": "Funko Pop - Boneco Barbie", 
-        "imagem": "imagens/funkpop/filmes-series/CAPIVARA FUNKO POP-93.jpg",
-        "categoria": "Filmes/Séries",
-        "descricao": "Funko Pop do universo de Barbie."
+
+    {
+      "nome": "Funko Pop - Boneco Barbie",
+      "imagem": "imagens/funkpop/filmes-series/CAPIVARA FUNKO POP-93.webp",
+      "categoria": "Filmes/Séries",
+      "descricao": "Funko Pop do universo de Barbie."
     },
-     { 
-        "nome": "Funko Pop - Wandinha", 
-        "imagem": "imagens/funkpop/filmes-series/CAPIVARA FUNKO POP-97.jpg",
-        "categoria": "Filmes/Séries",
-        "descricao": "Funko Pop da série Wednesday."
+    {
+      "nome": "Funko Pop - Wandinha",
+      "imagem": "imagens/funkpop/filmes-series/CAPIVARA FUNKO POP-97.webp",
+      "categoria": "Filmes/Séries",
+      "descricao": "Funko Pop da série Wednesday."
     },
-     { 
-        "nome": "Funko Pop -  Daemon Targaryen", 
-        "imagem": "imagens/funkpop/filmes-series/CAPIVARA FUNKO POP-111.jpg",
-        "categoria": "Filmes/Séries",
-        "descricao": "Funko Pop da série House of the Dragon."
+    {
+      "nome": "Funko Pop -  Daemon Targaryen",
+      "imagem": "imagens/funkpop/filmes-series/CAPIVARA FUNKO POP-111.webp",
+      "categoria": "Filmes/Séries",
+      "descricao": "Funko Pop da série House of the Dragon."
     },
-     { 
-        "nome": "Funko Pop - Eddie Munson", 
-        "imagem": "imagens/funkpop/filmes-series/CAPIVARA FUNKO POP-115.jpg",
-        "categoria": "Filmes/Séries",
-        "descricao": "Funko Pop da série Stranger Things."
+    {
+      "nome": "Funko Pop - Eddie Munson",
+      "imagem": "imagens/funkpop/filmes-series/CAPIVARA FUNKO POP-115.webp",
+      "categoria": "Filmes/Séries",
+      "descricao": "Funko Pop da série Stranger Things."
     },
-     { 
-        "nome": "Funko Pop - Maui", 
-        "imagem": "imagens/funkpop/filmes-series/CAPIVARA FUNKO POP-130.jpg",
-        "categoria": "Filmes/Séries",
-        "descricao": "Funko Pop do filme Moana da Disney."
+    {
+      "nome": "Funko Pop - Maui",
+      "imagem": "imagens/funkpop/filmes-series/CAPIVARA FUNKO POP-130.webp",
+      "categoria": "Filmes/Séries",
+      "descricao": "Funko Pop do filme Moana da Disney."
     },
-     
-      
-      { 
-        "nome": "Funko Pop -  Eleven", 
-        "imagem": "imagens/funkpop/filmes-series/FIGURES_-55.jpg",
-        "categoria": "Filmes/Séries",
-        "descricao": "Funko Pop da série Stranger Things."
+
+    {
+      "nome": "Funko Pop -  Eleven",
+      "imagem": "imagens/funkpop/filmes-series/FIGURES_-55.webp",
+      "categoria": "Filmes/Séries",
+      "descricao": "Funko Pop da série Stranger Things."
     },
-      { 
-        "nome": "Funko Pop - Daenerys Targaryen e Drogon", 
-        "imagem": "imagens/funkpop/filmes-series/CAPIVARA FUNKO POP-153.jpg",
-        "categoria": "Filmes/Séries",
-        "descricao": "Funko Pop da série Game of Thrones."
+    {
+      "nome": "Funko Pop - Daenerys Targaryen e Drogon",
+      "imagem": "imagens/funkpop/filmes-series/CAPIVARA FUNKO POP-153.webp",
+      "categoria": "Filmes/Séries",
+      "descricao": "Funko Pop da série Game of Thrones."
     },
-      { 
-        "nome": "Funko Pop - Freddy Fazbear", 
-        "imagem": "imagens/funkpop/filmes-series/FIGURES_-3.jpg",
-        "categoria": "Filmes/Séries",
-        "descricao": "Funko Pop do jogo Five Nights at Freddy's."
+    {
+      "nome": "Funko Pop - Freddy Fazbear",
+      "imagem": "imagens/funkpop/filmes-series/FIGURES_-3.webp",
+      "categoria": "Filmes/Séries",
+      "descricao": "Funko Pop do jogo Five Nights at Freddy's."
     },
-      { 
-        "nome": "Funko Pop -  Rocky Balboa", 
-        "imagem": "imagens/funkpop/filmes-series/FIGURES_-6.jpg",
-        "categoria": "Filmes/Séries",
-        "descricao": "Funko Pop do filme Rocky."
+    {
+      "nome": "Funko Pop -  Rocky Balboa",
+      "imagem": "imagens/funkpop/filmes-series/FIGURES_-6.webp",
+      "categoria": "Filmes/Séries",
+      "descricao": "Funko Pop do filme Rocky."
     },
-      { 
-        "nome": "Funko Pop -  Frodo", 
-        "imagem": "imagens/funkpop/filmes-series/CAPIVARA FUNKO POP-118.jpg",
-        "categoria": "Filmes/Séries",
-        "descricao": "Funko Pop do filme Senhor dos Anéis."
+    {
+      "nome": "Funko Pop -  Frodo",
+      "imagem": "imagens/funkpop/filmes-series/CAPIVARA FUNKO POP-118.webp",
+      "categoria": "Filmes/Séries",
+      "descricao": "Funko Pop do filme Senhor dos Anéis."
     },
-     {
+    {
       "nome": "Funko Pop - Vegetta",
-      "imagem": "imagens/funkpop/animes-desenhos/FIGURES_-9.jpg",
+      "imagem": "imagens/funkpop/animes-desenhos/FIGURES_-9.webp",
       "categoria": "Desenhos",
       "descricao": "Funko Pop do universo de Dragon Ball."
     },
     {
       "nome": "Funko Pop - Darth Vader",
-      "imagem": "imagens/funkpop/star-wars/CAPIVARA FUNKO POP-11.jpg",
+      "imagem": "imagens/funkpop/star-wars/CAPIVARA FUNKO POP-11.webp",
       "categoria": "Star Wars",
       "descricao": "Funko Pop do universo Star Wars."
     },
     {
       "nome": "Funko Pop - Darth Maul",
-      "imagem": "imagens/funkpop/star-wars/CAPIVARA FUNKO POP-13.jpg",
+      "imagem": "imagens/funkpop/star-wars/CAPIVARA FUNKO POP-13.webp",
       "categoria": "Star Wars",
       "descricao": "Funko Pop do universo Star Wars."
     },
     {
       "nome": "Funko Pop - Ahsoka",
-      "imagem": "imagens/funkpop/star-wars/CAPIVARA FUNKO POP-14.jpg",
+      "imagem": "imagens/funkpop/star-wars/CAPIVARA FUNKO POP-14.webp",
       "categoria": "Star Wars",
       "descricao": "Funko Pop do universo Star Wars."
     },
     {
       "nome": "Funko Pop - stormtrooper",
-      "imagem": "imagens/funkpop/star-wars/CAPIVARA FUNKO POP-15.jpg",
+      "imagem": "imagens/funkpop/star-wars/CAPIVARA FUNKO POP-15.webp",
       "categoria": "Star Wars",
       "descricao": "Funko Pop do universo Star Wars."
     },
     {
       "nome": "Funko Pop - Luke Skywalker",
-      "imagem": "imagens/funkpop/star-wars/CAPIVARA FUNKO POP-16.jpg",
+      "imagem": "imagens/funkpop/star-wars/CAPIVARA FUNKO POP-16.webp",
       "categoria": "Star Wars",
       "descricao": "Funko Pop do universo Star Wars."
     },
     {
       "nome": "Funko Pop - Chewbacca",
-      "imagem": "imagens/funkpop/star-wars/CAPIVARA FUNKO POP-17.jpg",
+      "imagem": "imagens/funkpop/star-wars/CAPIVARA FUNKO POP-17.webp",
       "categoria": "Star Wars",
       "descricao": "Funko Pop do universo Star Wars."
     },
     {
       "nome": "Funko Pop - Mandaloriana com sabre de luz",
-      "imagem": "imagens/funkpop/star-wars/CAPIVARA FUNKO POP-18.jpg",
+      "imagem": "imagens/funkpop/star-wars/CAPIVARA FUNKO POP-18.webp",
       "categoria": "Star Wars",
       "descricao": "Funko Pop do universo Star Wars."
     },
     {
       "nome": "Funko Pop - Personagem com Baby Yoda",
-      "imagem": "imagens/funkpop/star-wars/CAPIVARA FUNKO POP-19.jpg",
+      "imagem": "imagens/funkpop/star-wars/CAPIVARA FUNKO POP-19.webp",
       "categoria": "Star Wars",
       "descricao": "Funko Pop do universo Star Wars."
     },
     {
       "nome": "Funko Pop - Anakin Skywalker",
-      "imagem": "imagens/funkpop/star-wars/CAPIVARA FUNKO POP-20.jpg",
+      "imagem": "imagens/funkpop/star-wars/CAPIVARA FUNKO POP-20.webp",
       "categoria": "Star Wars",
       "descricao": "Funko Pop do universo Star Wars."
     },
     {
       "nome": "Funko Pop - Baby Yoda (Grugo)",
-      "imagem": "imagens/funkpop/star-wars/CAPIVARA FUNKO POP-56.jpg",
+      "imagem": "imagens/funkpop/star-wars/CAPIVARA FUNKO POP-56.webp",
       "categoria": "Star Wars",
       "descricao": "Funko Pop do universo Star Wars."
     },
     {
       "nome": "Funko Pop - Mandaloriano",
-      "imagem": "imagens/funkpop/star-wars/FIGURES_-10.jpg",
+      "imagem": "imagens/funkpop/star-wars/FIGURES_-10.webp",
       "categoria": "Star Wars",
       "descricao": "Funko Pop do universo Star Wars."
     },
     {
       "nome": "Funko Pop - Homem Aranha",
-      "imagem": "imagens/funkpop/herois/CAPIVARA FUNKO POP-30.jpg",
+      "imagem": "imagens/funkpop/herois/CAPIVARA FUNKO POP-30.webp",
       "categoria": "Herois",
       "descricao": "Funko Pop da Marvel."
     },
     {
       "nome": "Funko Pop - Homem Aranha 2",
-      "imagem": "imagens/funkpop/herois/CAPIVARA FUNKO POP-31.jpg",
+      "imagem": "imagens/funkpop/herois/CAPIVARA FUNKO POP-31.webp",
       "categoria": "Herois",
       "descricao": "Funko Pop da Marvel."
     },
     {
       "nome": "Funko Pop - Venom",
-      "imagem": "imagens/funkpop/herois/CAPIVARA FUNKO POP-32.jpg",
+      "imagem": "imagens/funkpop/herois/CAPIVARA FUNKO POP-32.webp",
       "categoria": "Herois",
       "descricao": "Funko Pop da Marvel."
     },
     {
       "nome": "Funko Pop - Venom 2",
-      "imagem": "imagens/funkpop/herois/CAPIVARA FUNKO POP-33.jpg",
+      "imagem": "imagens/funkpop/herois/CAPIVARA FUNKO POP-33.webp",
       "categoria": "Herois",
       "descricao": "Funko Pop da Marvel."
     },
     {
       "nome": "Funko Pop - Rocket",
-      "imagem": "imagens/funkpop/herois/CAPIVARA FUNKO POP-34.jpg",
+      "imagem": "imagens/funkpop/herois/CAPIVARA FUNKO POP-34.webp",
       "categoria": "Herois",
       "descricao": "Funko Pop da Marvel."
     },
     {
       "nome": "Funko Pop - Sam Wilson(capitão)",
-      "imagem": "imagens/funkpop/herois/CAPIVARA FUNKO POP-35.jpg",
+      "imagem": "imagens/funkpop/herois/CAPIVARA FUNKO POP-35.webp",
       "categoria": "Herois",
       "descricao": "Funko Pop da Marvel."
     },
     {
       "nome": "Funko Pop - Baby Gru",
-      "imagem": "imagens/funkpop/herois/CAPIVARA FUNKO POP-36.jpg",
+      "imagem": "imagens/funkpop/herois/CAPIVARA FUNKO POP-36.webp",
       "categoria": "Herois",
       "descricao": "Funko Pop da Marvel."
     },
     {
       "nome": "Funko Pop - Baby Gru 2",
-      "imagem": "imagens/funkpop/herois/CAPIVARA FUNKO POP-37.jpg",
+      "imagem": "imagens/funkpop/herois/CAPIVARA FUNKO POP-37.webp",
       "categoria": "Herois",
       "descricao": "Funko Pop da Marvel."
     },
     {
       "nome": "Funko Pop - Baby Gru 3",
-      "imagem": "imagens/funkpop/herois/CAPIVARA FUNKO POP-38.jpg",
+      "imagem": "imagens/funkpop/herois/CAPIVARA FUNKO POP-38.webp",
       "categoria": "Herois",
       "descricao": "Funko Pop da Marvel."
     },
     {
       "nome": "Funko Pop - Doutor Estranho",
-      "imagem": "imagens/funkpop/herois/CAPIVARA FUNKO POP-39.jpg",
+      "imagem": "imagens/funkpop/herois/CAPIVARA FUNKO POP-39.webp",
       "categoria": "Herois",
       "descricao": "Funko Pop da Marvel."
     },
     {
       "nome": "Funko Pop - Wolverine",
-      "imagem": "imagens/funkpop/herois/CAPIVARA FUNKO POP-40.jpg",
+      "imagem": "imagens/funkpop/herois/CAPIVARA FUNKO POP-40.webp",
       "categoria": "Herois",
       "descricao": "Funko Pop da Marvel."
     },
     {
       "nome": "Funko Pop - Homem de Ferro",
-      "imagem": "imagens/funkpop/herois/CAPIVARA FUNKO POP-41.jpg",
+      "imagem": "imagens/funkpop/herois/CAPIVARA FUNKO POP-41.webp",
       "categoria": "Herois",
       "descricao": "Funko Pop da Marvel."
     },
     {
       "nome": "Funko Pop - Batman",
-      "imagem": "imagens/funkpop/herois/CAPIVARA FUNKO POP-81.jpg",
+      "imagem": "imagens/funkpop/herois/CAPIVARA FUNKO POP-81.webp",
       "categoria": "Herois",
       "descricao": "Funko Pop da DC."
     },
     {
       "nome": "Funko Pop - Tubarão Rei",
-      "imagem": "imagens/funkpop/herois/CAPIVARA FUNKO POP-82.jpg",
+      "imagem": "imagens/funkpop/herois/CAPIVARA FUNKO POP-82.webp",
       "categoria": "Herois",
       "descricao": "Funko Pop da DC."
     },
     {
       "nome": "Funko Pop - Mulher Maravilha",
-      "imagem": "imagens/funkpop/herois/CAPIVARA FUNKO POP-83.jpg",
+      "imagem": "imagens/funkpop/herois/CAPIVARA FUNKO POP-83.webp",
       "categoria": "Herois",
       "descricao": "Funko Pop da DC."
     },
     {
       "nome": "Funko Pop - Superman",
-      "imagem": "imagens/funkpop/herois/CAPIVARA FUNKO POP-151.jpg",
+      "imagem": "imagens/funkpop/herois/CAPIVARA FUNKO POP-151.webp",
       "categoria": "Herois",
       "descricao": "Funko Pop da DC."
     },
     {
       "nome": "Funko Pop - Superman 2",
-      "imagem": "imagens/funkpop/herois/FIGURES_-16.jpg",
+      "imagem": "imagens/funkpop/herois/FIGURES_-16.webp",
       "categoria": "Herois",
       "descricao": "Funko Pop da DC."
     },
     {
       "nome": "Funko Pop - Harry Potter",
-      "imagem": "imagens/funkpop/harry-potter/CAPIVARA FUNKO POP-140.jpg",
+      "imagem": "imagens/funkpop/harry-potter/CAPIVARA FUNKO POP-140.webp",
       "categoria": "Harry Potter",
       "descricao": "Funko Pop do universo de Harry Potter."
     },
     {
       "nome": "Funko Pop - Hermione",
-      "imagem": "imagens/funkpop/harry-potter/CAPIVARA FUNKO POP-141.jpg",
+      "imagem": "imagens/funkpop/harry-potter/CAPIVARA FUNKO POP-141.webp",
       "categoria": "Harry Potter",
       "descricao": "Funko Pop do universo de Harry Potter."
     },
     {
       "nome": "Funko Pop - O Trio",
-      "imagem": "imagens/funkpop/harry-potter/CAPIVARA FUNKO POP-142.jpg",
+      "imagem": "imagens/funkpop/harry-potter/CAPIVARA FUNKO POP-142.webp",
       "categoria": "Harry Potter",
       "descricao": "Funko Pop do universo de Harry Potter."
     },
     {
       "nome": "Funko Pop - Hogwarts Express",
-      "imagem": "imagens/funkpop/harry-potter/CAPIVARA FUNKO POP-137.jpg",
+      "imagem": "imagens/funkpop/harry-potter/CAPIVARA FUNKO POP-137.webp",
       "categoria": "Harry Potter",
       "descricao": "Funko Pop do universo de Harry Potter."
     }
-
-    
-  
   ],
   "produtosActionFiguresEstaticos": [
-    { 
-      "nome": "Son Goku Super Saiyajin", 
-      "imagem": "imagens/actionfigures/animes/FIGURES_-41.JPG",
+    {
+      "nome": "Son Goku Super Saiyajin",
+      "imagem": "imagens/actionfigures/animes/FIGURES_-41.webp",
       "categoria": "Animes",
       "descricao": "Action figure estático do anime Dragon Ball"
     },
-       {
+    {
       "nome": "Freeza",
-      "imagem": "imagens/actionfigures/animes/FIGURES_-43.JPG",
+      "imagem": "imagens/actionfigures/animes/FIGURES_-43.webp",
       "categoria": "Animes",
       "descricao": "Action figure estático do anime Dragon Ball"
     },
     {
       "nome": "Naruto Uzumaki",
-      "imagem": "imagens/actionfigures/animes/FIGURES_-25.JPG",
+      "imagem": "imagens/actionfigures/animes/FIGURES_-25.webp",
       "categoria": "Animes",
       "descricao": "Action figure estático do anime Naruto."
     },
     {
       "nome": "Sasuke Uchiha",
-      "imagem": "imagens/actionfigures/animes/FIGURES_-23.JPG",
+      "imagem": "imagens/actionfigures/animes/FIGURES_-23.webp",
       "categoria": "Animes",
       "descricao": "Action figure estático do anime Naruto."
     },
     {
       "nome": "Saitama",
-      "imagem": "imagens/actionfigures/animes/FIGURES_-21.JPG",
+      "imagem": "imagens/actionfigures/animes/FIGURES_-21.webp",
       "categoria": "Animes",
       "descricao": "Action figure estático do anime One-Punch Man."
     },
     {
       "nome": "Roronoa Zoro",
-      "imagem": "imagens/actionfigures/animes/FIGURES_-29.JPG",
+      "imagem": "imagens/actionfigures/animes/FIGURES_-29.webp",
       "categoria": "Animes",
       "descricao": "Action figure estático do anime One Piece."
     },
     {
       "nome": "Naruto Uzumaki (Modo Sábio dos Seis Caminhos)",
-      "imagem": "imagens/actionfigures/animes/FIGURES_-27.JPG",
+      "imagem": "imagens/actionfigures/animes/FIGURES_-27.webp",
       "categoria": "Animes",
       "descricao": "Action figure estático do anime Naruto."
     },
     {
       "nome": "Monkey D. Luffy",
-      "imagem": "imagens/actionfigures/animes/FIGURES_-33.JPG",
+      "imagem": "imagens/actionfigures/animes/FIGURES_-33.webp",
       "categoria": "Animes",
       "descricao": "Action figure estático do anime One Piece."
     },
     {
       "nome": "Izuku Midoriya",
-      "imagem": "imagens/actionfigures/animes/FIGURES_-39.JPG",
+      "imagem": "imagens/actionfigures/animes/FIGURES_-39.webp",
       "categoria": "Animes",
       "descricao": "Action figure estático do anime Deku - My Hero Academia"
     },
     {
       "nome": "Katsuki Bakugo",
-      "imagem": "imagens/actionfigures/animes/FIGURES_-37.JPG",
+      "imagem": "imagens/actionfigures/animes/FIGURES_-37.webp",
       "categoria": "Animes",
       "descricao": "Action figure estático do anime Deku - My Hero Academia"
     },
     {
       "nome": "Endeavor",
-      "imagem": "imagens/actionfigures/animes/FIGURES_-45.JPG",
+      "imagem": "imagens/actionfigures/animes/FIGURES_-45.webp",
       "categoria": "Animes",
       "descricao": "Action figure estático do anime My Hero Academia."
     },
     {
       "nome": "Evangelion Unidade-01",
-      "imagem": "imagens/actionfigures/animes/FIGURES_-35.JPG",
+      "imagem": "imagens/actionfigures/animes/FIGURES_-35.webp",
       "categoria": "Animes",
       "descricao": "Action figure estático da série Neon Genesis Evangelion"
     },
     {
       "nome": "Bangela",
-      "imagem": "imagens/actionfigures/filmes/FIGURES_.JPG",
+      "imagem": "imagens/actionfigures/filmes/FIGURES_.webp",
       "categoria": "Filmes",
       "descricao": "Action figure estático do personagem Bangela."
     }
- 
   ],
   "produtosActionFiguresArticulados": [
-    { 
-      "nome": "Gigi", 
-      "imagem": "imagens/actionfigures-articulados/FIGURES_-56.JPG",
+    {
+      "nome": "Gigi",
+      "imagem": "imagens/actionfigures-articulados/FIGURES_-56.webp",
       "categoria": "Filmes",
       "descricao": "Action figure articulado da personagem Gigi."
     }
   ],
   "produtosMiniColecionaveis": [],
   "produtosPresenteaveis": [
-    { 
-      "nome": "Bolsa Star Wars", 
-      "imagem": "imagens/presenteaveis/bolsa-star-wars.jpg",
+    {
+      "nome": "Bolsa Star Wars",
+      "imagem": "imagens/presenteaveis/bolsa-star-wars.webp",
       "categoria": "Bolsa",
       "descricao": "Bolsa temática de Star Wars, material resistente"
     }
- 
   ],
   "produtosModaGeek": [
-    { 
-      "nome": "Camiseta Homem-Aranha", 
-      "imagem": "imagens/moda-geek/camiseta-homem-aranha.jpg",
+    {
+      "nome": "Camiseta Homem-Aranha",
+      "imagem": "imagens/moda-geek/camiseta-homem-aranha.webp",
       "categoria": "Camisetas",
       "descricao": "Camiseta 100% algodão com estampa do Homem-Aranha"
     }
-   
   ]
 }
